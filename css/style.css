@@ -63,6 +63,7 @@
 
 .feature-img-div {
     position: relative;
+
 }
 
 .feature-tag {
@@ -84,12 +85,25 @@
     color: #3E86F4;
 }
 
-.top-story {
-    border: 1px solid black;
-    height: 100px;
+.img-my-turn {
+	width: 175px;
+
+}
+
+.h5-3 {
+	padding: 10px 0;
+	font-size: 14px;
+	color: #818181;
+	font-weight: bold;
+}
+
+.idk {
+	width: 100%;
+	z-index: -1;
 }
 
 .debate {
     border: 1px solid black;
     height: 100px;
 }
+

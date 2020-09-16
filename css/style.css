@@ -3,3 +3,26 @@
     background: gray;
     border: 1px solid black;
 }
+
+.weather {
+	width:  24px;
+	height: 24px;
+	
+}
+
+.first-span {
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	margin: 30px auto;
+}
+
+.second-span {
+	font-size: 18px;
+	color: white;
+	margin: 40px 30px;
+}
+
+.logo-img {
+	width: 500px;
+}

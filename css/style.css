@@ -49,3 +49,18 @@
 .main-nav {
     border: 1px solid black;
 }
+
+.featured {
+	border: 1px solid black;
+	height: 100px;
+}
+
+.top-story {
+	border: 1px solid black;
+	height: 100px;
+}
+
+.debate {
+	border: 1px solid black;
+	height: 100px;
+}

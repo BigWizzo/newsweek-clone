@@ -24,7 +24,7 @@
 }
 
 .logo-img {
-    width: 500px;
+    width: 100%;
 }
 
 .nav-btns {
@@ -51,16 +51,45 @@
 }
 
 .featured {
-	border: 1px solid black;
-	height: 100px;
+    /* border: 1px solid black; */
+    /* height: 100px; */
+}
+
+.card {
+    /* width: 329px; */
+    border: none;
+    /* height: 329px; */
+}
+
+.feature-img-div {
+    position: relative;
+}
+
+.feature-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 17px;
+    padding: 8px 15px 9px 15px;
+    color: red;
+    background: #F9F7F8;
+    font-weight: bold;
+}
+
+.ranking-border {
+    border: 1px solid #e6e6e6;
+}
+
+.blue {
+    color: #3E86F4;
 }
 
 .top-story {
-	border: 1px solid black;
-	height: 100px;
+    border: 1px solid black;
+    height: 100px;
 }
 
 .debate {
-	border: 1px solid black;
-	height: 100px;
+    border: 1px solid black;
+    height: 100px;
 }

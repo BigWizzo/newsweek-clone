@@ -117,8 +117,8 @@
 }
 
 .img-my-turn {
-  width: 175px;
-  height: 117px;
+  /* width: 175px; */
+  /* height: 117px; */
 }
 
 .h5-3 {
@@ -243,4 +243,20 @@
 
 .mag-tag {
   margin-top: 12px;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .img-my-turn {
+    width: 100%;
+    /* height: ; */
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

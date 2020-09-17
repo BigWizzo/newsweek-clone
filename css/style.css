@@ -1,3 +1,7 @@
+/* .w-100 { */
+/* width: 100% */
+/* } */
+
 .my-nav {
     height: 100px;
     background: gray;
@@ -86,24 +90,29 @@
 }
 
 .img-my-turn {
-	width: 175px;
+    width: 175px;
+    height: 117px;
 
 }
 
 .h5-3 {
-	padding: 10px 0;
-	font-size: 14px;
-	color: #818181;
-	font-weight: bold;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #818181;
+    font-weight: bold;
 }
 
 .idk {
-	width: 100%;
-	z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.more-card {
+    padding: 25px 0;
+    border-top: 1px solid #ddd;
 }
 
 .debate {
     border: 1px solid black;
     height: 100px;
 }
-

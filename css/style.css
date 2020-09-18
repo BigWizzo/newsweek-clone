@@ -245,18 +245,11 @@
   margin-top: 12px;
 }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .img-my-turn {
-    width: 100%;
-    /* height: ; */
-  }
+.cat-card {
+  padding: 15px 0;
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* subscribe section starts here */
+.email-img {
+  height: 315px;
 }

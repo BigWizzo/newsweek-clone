@@ -2,9 +2,9 @@
 
 # Project Name
 Newsweek Clone
-> One paragraph statement about the project.
+This project is build with Bootstrap!
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/sc.png)
 
 Additional description about the project and its features.
 
@@ -21,8 +21,6 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 This project represents clone of Newsweek. To build it we used Bootstrap framework.
 
 To get a local copy up and running follow these simple example steps.
@@ -43,13 +41,14 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 Willard Nyamunokora
+
 
 - Github: [@githubhandle](https://github.com/bigwizzo )
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- Twitter: [@twitterhandle](https://twitter.com/willnyamunokora)
 - Linkedin: [linkedin](https://www.linkedin.com/in/willnyamunokora)
 
-👤 **Author2**
+👤 Andjela Vukadinovic
 
 - Github: [@githubhandle](https://github.410AngelaVU)
 - Twitter: [@twitterhandle](@andjelavukadinov7)

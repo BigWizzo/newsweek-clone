@@ -33,6 +33,16 @@
   padding: 15px 0;
 }
 
+.nav-subscribe {
+    color: black;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+
+	}
+
+
 .my-nav {
   height: 100px;
   /* background: gray; */
@@ -76,7 +86,7 @@
 /* } */
 
 .nav-btns {
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   /* bottom: 15%; */
   /* border: 1px solid black; */
@@ -156,8 +166,9 @@ ul {
 
 input {
   width: 60px;
-  border: none;
+  /*border: none;*/
   margin-top: 10px;
+  margin-left: 20px;
 }
 
 /* .main-nav { */
@@ -432,10 +443,6 @@ input {
   margin: 5px;
 }
 
-.nav-subscribe {
-	font-size: 12px;
-		padding: 10px;
-}
 
 @media (max-width: 568px) {
 	.nav-subscribe {

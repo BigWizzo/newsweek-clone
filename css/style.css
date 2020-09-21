@@ -439,8 +439,10 @@ input {
 
 @media (max-width: 568px) {
 	.nav-subscribe {
-		font-size: 12px;
-		padding: 10px;
+    color: black;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
 	}
 }
 

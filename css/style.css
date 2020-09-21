@@ -46,9 +46,25 @@
 
 .my-nav-1 {
   height: 100px;
+  height: 100px;
+}
+
+.nav-1 {
+  background-color: #ff0500;
+  height: 100px;
+}
+
+.my-nav-1 {
+  height: 100px;
 }
 
 .weather {
+  width: 24px;
+  height: 24px;
+}
+
+.my-nav-weather {
+  margin: 20px 20px;
   width: 24px;
   height: 24px;
 }
@@ -191,6 +207,100 @@ input {
 .featured {
   /* border: 1px solid black; */
   /* height: 100px; */
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  margin: 50px auto;
+  cursor: pointer;
+}
+
+.second-span {
+  font-size: 18px;
+  color: white;
+}
+
+.nav-btns {
+  align-items: flex-end;
+  justify-content: center;
+  bottom: 15%;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+}
+
+.btn-login {
+  width: 20%;
+  height: 30px;
+  background-color: #f72210;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hello {
+  width: 200px;
+  border: 1px solid black;
+}
+
+.btn-sub {
+  width: 40%;
+  height: 30px;
+  font-size: 15px;
+  background-color: #ffe400;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.navbar {
+  height: 70px;
+}
+
+ul {
+  justify-content: flex-start;
+  display: inline;
+  width: 100%;
+}
+
+.nav-item {
+  display: inline-flex;
+}
+
+.a-1 {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.a-1:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+.love {
+  height: 50px;
+  border-bottom: 1px solid #f4f5f7;
+  border-top: 1px solid #f4f5f7;
+  margin-top: 20px;
+}
+
+.nav-link:hover {
+  color: #f72210;
+}
+
+.nav-link {
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+input {
+  width: 60px;
+  border: none;
+  margin-top: 10px;
 }
 
 .card {

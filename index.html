@@ -24,81 +24,109 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="d-none d-lg-block col-lg-4 my-nav">
+    <nav class="nav-1 container-fluid">
+      <div class="row">
+        <div class="col-lg-4 d-none d-lg-block d-xl-block">
+          <div class="my-nav-weather">
             <img src="30.png" alt="" class="weather" />
             <span class="first-span"
-              >30, Belgrade, RS <i class="fas fa-chevron-right"></i
+              >30, Belgrade, RS &nbsp;<i class="fas fa-chevron-right"></i
             ></span>
             <br />
             <span class="second-span">Wed, Sep 16, 2020</span>
           </div>
-          <div class="col-6 col-lg-4 my-nav">
-            <img src="img-1.svg" alt="" class="logo-img" />
-          </div>
-          <div class="col-6 col-lg-4 nav-btns row">
-            <button type="submit" class="btn btn-danger">Danger</button>
-            <a href="#" class="navbar-brand"
-              >Warning <i class="fas fa-chevron-right"></i
-            ></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        </div>
+        <div class="col-lg-4 col-8 d-xl-block d-lg-block">
+          <div class="my-nav-1">
+            <img
+              src="./images/images.png"
+              alt="Responsive image"
+              class="h-100 w-100"
+            />
           </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">U.S</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">World</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Buisness</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tech & Science</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Culture</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Newsgeek</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sports</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Health</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">The Debate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Vantage</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Weather</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="col-lg-4 col-4 nav-btns row">
+          <i class="d-lg-none fas fa-user-alt"></i>
+          <button type="submit" class="d-none d-lg-block btn-login">
+            LOGIN</button
+          >&nbsp;&nbsp;
+          <button type="subscribe" class="btn btn-sub">
+            SUBSCRIBE&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></button
+          >&nbsp;
+          <i class="d-lg-none d-xl-none fas fa-bars"></i>
+        </div>
       </div>
+    </nav>
+
+    <nav class="navbar d-none d-lg-block navbar-expand">
+      <ul class="row navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">U.S.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">World</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Buisness</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tech & Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Culture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Newsgeek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Health</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">The Debate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vantage</a>
+        </li>
+        <li class="nav-items">
+          <a class="nav-link" href="#"> Weather</a>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <input type="search" name="search" placeholder="Search" /><i
+            class="fas fa-search"
+          ></i>
+        </form>
+      </ul>
+    </nav>
+
+    <nav class="navbar d-none d-lg-block navbar-expand love">
+      <ul class="nav navbar-nav">
+        <li class="nav-item-nav">
+          <a
+            class="nav-link nav-link-dark disabled"
+            aria-disabled="true"
+            href="#"
+            >TRENDING</a
+          >
+        </li>
+        <li class="nav-item-nav">
+          <a class="nav-link" href="#">DONALD TRUMP</a>
+        </li>
+        <li class="nav-item-nav">
+          <a class="nav-link" href="#">JOE BIDEN</a>
+        </li>
+        <li class="nav-item-nav">
+          <a class="nav-link" href="#">CHINA</a>
+        </li>
+        <li class="nav-item-nav">
+          <a class="nav-link" href="#">CORONAVIRUS</a>
+        </li>
+        <li class="nav-item-nav">
+          <a class="nav-link" href="#">ELECTIONS 2020</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- *** The main section starts here *** -->
@@ -1811,7 +1839,7 @@
       </div>
     </main>
     <footer class="footer container-fluid">
-      <div class="row ft-social pb-1">
+      <div class="row ft-social py-2">
         <div class="col-md-6 row align-items-end">
           <img
             class="col-md-6 ft-logo"

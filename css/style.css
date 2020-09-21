@@ -35,8 +35,17 @@
 
 .my-nav {
   height: 100px;
-  background: gray;
-  border: 1px solid black;
+  /* background: gray; */
+  /* border: 1px solid black; */
+}
+
+.nav-1 {
+  background-color: #ff0500;
+  height: 100px;
+}
+
+.my-nav-1 {
+  height: 100px;
 }
 
 .weather {
@@ -44,45 +53,116 @@
   height: 24px;
 }
 
+.my-nav-weather {
+  margin: 20px 20px;
+}
+
 .first-span {
   font-size: 15px;
   font-weight: bold;
   color: white;
-  margin: 30px auto;
+  margin: 50px auto;
+  cursor: pointer;
 }
 
 .second-span {
   font-size: 18px;
   color: white;
-  margin: 40px 30px;
+  /* margin: 40px 30px; */
 }
 
-.logo-img {
-  width: 100%;
-}
+/* .logo-img { */
+/* width: 100%; */
+/* } */
 
 .nav-btns {
   align-items: flex-end;
   justify-content: flex-end;
+  /* bottom: 15%; */
+  /* border: 1px solid black; */
+  /* position: absolute; */
+  /* right: 0; */
 }
 
-.btn-danger {
-  width: 75px;
+.btn-login {
+  width: 20%;
   height: 30px;
-  margin-right: 40px;
-  margin-bottom: 20px;
+  background-color: #f72210;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.btn-warning {
-  width: 128px;
-  height: 30px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.main-nav {
+.hello {
+  width: 200px;
   border: 1px solid black;
 }
+
+.btn-sub {
+  width: 40%;
+  height: 30px;
+  font-size: 15px;
+  background-color: #ffe400;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.navbar {
+  /* height: 70px; */
+}
+
+ul {
+  justify-content: flex-start;
+  display: inline;
+  width: 100%;
+}
+
+.nav-item {
+  display: inline-flex;
+}
+
+.a-1 {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.a-1:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.love {
+  height: 50px;
+  border-bottom: 1px solid #f4f5f7;
+  border-top: 1px solid #f4f5f7;
+  margin-top: 20px;
+}
+
+.nav-link:hover {
+  color: #f72210;
+}
+
+.nav-link {
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+input {
+  width: 60px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* .main-nav { */
+/* border: 1px solid black; */
+/* } */
 
 .main-section {
   /* padding: 0 40px; */
@@ -299,6 +379,7 @@
   padding: 20px 0;
   border-top: 1px solid gray;
 }
+
 .sub-card {
   height: 315px;
   background: #f4f5f6;
@@ -321,13 +402,15 @@
 
 /* footer starts here */
 .footer {
-  padding: 30px 0;
+  margin: 30px 0;
   border-top: 2px solid gainsboro;
 }
+
 .ft-logo {
   max-width: 238px;
   max-height: 37px;
 }
+
 .ft-icon {
   font-size: 22px;
   padding: 0 5px;
@@ -349,12 +432,20 @@
   margin: 5px;
 }
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* // Small devices (landscape phones, 576px and down) */
+@media (max-width: 768px) {
 }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* // Medium devices (tablets, 768px and down) */
+@media (max-width: 992px) {
+  .nav-1 {
+    height: 50px;
+  }
+
+  .my-nav-1 {
+    height: 50px;
+    width: 145px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */

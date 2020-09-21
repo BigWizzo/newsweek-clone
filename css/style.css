@@ -432,6 +432,18 @@ input {
   margin: 5px;
 }
 
+.nav-subscribe {
+	font-size: 12px;
+		padding: 10px;
+}
+
+@media (max-width: 568px) {
+	.nav-subscribe {
+		font-size: 12px;
+		padding: 10px;
+	}
+}
+
 /* // Small devices (landscape phones, 576px and down) */
 @media (max-width: 768px) {}
 
@@ -452,3 +464,4 @@ input {
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
+

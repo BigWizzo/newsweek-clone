@@ -6,13 +6,12 @@ This project is build with Bootstrap!
 
 ![screenshot](./images/sc.png)
 
-Additional description about the project and its features.
+
 
 ## Built With
 
 - HTML and CSS
 - Bootstrap
-- technologies used
 
 ## Live Demo
 

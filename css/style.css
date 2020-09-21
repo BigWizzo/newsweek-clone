@@ -4,60 +4,138 @@
 
 .my-nav {
     height: 100px;
-    background: gray;
-    border: 1px solid black;
 }
+
+.nav-1 {
+	background-color: #FF0500;
+	height: 100px;
+}
+
+.my-nav-1 {
+	height: 100px;
+}
+
+
 
 .weather {
     width: 24px;
     height: 24px;
-
 }
+
+.my-nav-weather {
+	margin: 20px 20px;
+}
+
+
 
 .first-span {
     font-size: 15px;
     font-weight: bold;
     color: white;
-    margin: 30px auto;
+    margin: 50px auto;
+    cursor: pointer;
 }
 
 .second-span {
     font-size: 18px;
     color: white;
-    margin: 40px 30px;
 }
 
-.logo-img {
-    width: 100%;
-}
+
+
 
 .nav-btns {
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+  bottom: 15%;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
 }
 
-.btn-danger {
-    width: 75px;
+
+  .btn-login {
+    width: 20%;
     height: 30px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    background-color: #F72210;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.btn-warning {
-    width: 128px;
+.hello {
+	width: 200px;
+	border: 1px solid black;
+}
+
+
+
+ .btn-sub {
+    width: 40%;
     height: 30px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  font-size: 15px;
+    background-color: #FFE400;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    cursor: pointer;
 }
 
-.main-nav {
-    border: 1px solid black;
+.navbar {
+  
+    height: 70px;
 }
 
-.featured {
-    /* border: 1px solid black; */
-    /* height: 100px; */
+ul {
+	justify-content: flex-start;
+	display: inline;
+	width: 100%;
 }
+
+.nav-item {
+display: inline-flex;
+
+}
+
+.a-1 {
+color: black;
+	font-weight: bold;
+	font-size: 15px;
+
+}
+
+.a-1:hover {
+color: #F72210;
+text-decoration: none;
+}
+.love {
+	height: 50px;
+	border-bottom: 1px solid  #F4F5F7;
+	border-top: 1px solid  #F4F5F7;
+	margin-top: 20px;
+}
+
+.nav-link:hover {
+	color: #F72210;
+}
+
+.nav-link {
+	color: #A0A0A0;
+	font-weight: bold;
+}
+
+
+	input {
+		width: 60px;
+		border: none;
+		margin-top: 10px;
+
+	}
+
 
 .card {
     /* width: 329px; */

@@ -50,8 +50,6 @@ To get a local copy up and running follow these simple example steps.
 👤 Andjela Vukadinovic
 
 - Github: [@githubhandle](https://github.com/410AngelaVU)
-- Twitter: [@twitterhandle](https://twitter.com/andjelavukadinov7)
-- Linkedin: [linkedin](https://linkedin.com/in/andjelavukadinov)
 
 ## 🤝 Contributing
 

@@ -79,7 +79,6 @@
   height: 1.875rem;
   background: #f72210;
   color: white;
-  border: none;
   /* font-weight: bold; */
   cursor: pointer;
 }
@@ -101,7 +100,8 @@
   /* font-weight: bold; */
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-mid:hover {
   color: #f72210;
 }
 
@@ -112,10 +112,6 @@
   height: 1.25rem;
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.nav-mid:hover {
-  color: #f72210;
 }
 
 .nav-input {
@@ -161,7 +157,7 @@
   bottom: 0;
   left: 0;
   padding: 8px 15px 9px 15px;
-  color: red;
+  /* color: red; */
   background: #f9f7f8;
   /* font-weight: bold; */
 }
@@ -366,12 +362,9 @@
   }
 }
 
-/* // Medium devices (tablets, 768px and down) */
-@media (max-width: 992px) {
-  .nav-1 {
-    height: 50px;
-  }
+/* devices less 768px and down */
 
+@media (max-width: 768px) {
   .sub-card {
     position: relative;
     justify-content: center;
@@ -381,6 +374,13 @@
     position: absolute;
     text-align: center;
     bottom: 15px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and down) */
+@media (max-width: 992px) {
+  .nav-1 {
+    height: 50px;
   }
 
   .email-img-div {

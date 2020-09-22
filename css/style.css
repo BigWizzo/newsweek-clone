@@ -51,11 +51,15 @@
 
 .weather {
   width: 1.5rem;
-  height: 24px;
+  height: 1.5rem;
 }
 
 .my-nav-weather {
   margin: 20px 20px;
+}
+
+.my-nav-1 {
+  height: 5.9375rem;
 }
 
 .first-span {
@@ -99,6 +103,10 @@
 .nav-link:hover,
 .nav-mid:hover {
   color: #f72210;
+}
+
+.btm-nav {
+  margin-top: 6.25rem;
 }
 
 .nav-input {
@@ -248,7 +256,7 @@
 }
 
 .sub-img-div {
-  height: 14.1875rem;
+  height: 5.3125rem;
 }
 
 .sub-abs {
@@ -317,6 +325,11 @@
     text-align: center;
     bottom: 15px;
   }
+
+  .sub-img-div {
+    height: 5.3125rem;
+    text-align: center;
+  }
 }
 
 /* // Medium devices (tablets, 768px and down) */
@@ -333,6 +346,7 @@
 
   .main-section {
     padding: 0 20px;
+    margin-top: 65px;
   }
 
   .my-nav-1 {

@@ -49,15 +49,15 @@ To get a local copy up and running follow these simple example steps.
 
 👤 Andjela Vukadinovic
 
-- Github: [@githubhandle](https://github.410AngelaVU)
-- Twitter: [@twitterhandle](@andjelavukadinov7)
-- Linkedin: [linkedin](https://linkedin.com/andjelavukadinov)
+- Github: [@githubhandle](https://github.com/410AngelaVU)
+- Twitter: [@twitterhandle](https://twitter.com/andjelavukadinov7)
+- Linkedin: [linkedin](https://linkedin.com/in/andjelavukadinov)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/BigWizzo/newsweek-clone/issues ).
 
 ## Show your support
 
@@ -71,4 +71,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

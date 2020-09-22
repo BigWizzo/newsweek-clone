@@ -8,7 +8,7 @@
 
 .fam-hd {
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1.125rem;
 }
 
@@ -16,8 +16,16 @@
   font-size: 0.75rem;
 }
 
+.font-14 {
+  font-size: 0.875rem;
+}
+
 .font-15 {
   font-size: 0.9375rem;
+}
+
+.font-17 {
+  font-size: 1.0625rem;
 }
 
 .bdr-btm-lt {
@@ -27,10 +35,9 @@
 
 .nav-subscribe {
   color: black;
-  font-size: 1.0625rem;
   padding: 5px 10px;
   border-radius: 15px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .my-nav {
@@ -38,7 +45,7 @@
 }
 
 .nav-1 {
-  background-color: #ff0500;
+  background: #ff0500;
   height: 6.25rem;
 }
 
@@ -56,56 +63,30 @@
 }
 
 .first-span {
-  font-size: 15px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: white;
   margin: 50px auto;
   cursor: pointer;
 }
 
 .second-span {
-  font-size: 1.125rem;
+  font-size: 18px;
   color: white;
 }
 
 .btn-login {
   width: 20%;
   height: 1.875rem;
-  background-color: #f72210;
+  background: #f72210;
   color: white;
   border: none;
-  font-weight: bold;
+  /* font-weight: bold; */
   cursor: pointer;
 }
 
 .hello {
   width: 12.5rem;
   border: 1px solid black;
-}
-
-.btn-sub {
-  width: 40%;
-  height: 1.875rem;
-  font-size: 0.9375rem;
-  background-color: #ffe400;
-  color: black;
-  border: none;
-  font-weight: bold;
-  border-radius: 15px;
-  padding-top: 5px;
-  padding-left: 15px;
-  cursor: pointer;
-}
-
-.a-1 {
-  color: black;
-  font-weight: bold;
-  font-size: 0.9375rem;
-}
-
-.a-1:hover {
-  color: #f72210;
-  text-decoration: none;
 }
 
 .love {
@@ -117,7 +98,7 @@
 
 .nav-link {
   color: #a0a0a0;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .nav-link:hover {
@@ -126,7 +107,7 @@
 
 .nav-mid {
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
   border-right: 1px solid #a0a0a0;
   height: 1.25rem;
   padding-top: 0;
@@ -154,8 +135,8 @@
 }
 
 .topic-h2 {
-  font-size: 1.1875rem;
-  font-weight: bolder;
+  font-size: 19px;
+  /* font-weight: bolder; */
 }
 
 .n-log {
@@ -164,7 +145,7 @@
   background: red;
   color: white;
   font-size: 1.1875rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .card {
@@ -179,11 +160,10 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 0.875rem;
   padding: 8px 15px 9px 15px;
   color: red;
   background: #f9f7f8;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .ranking-border {
@@ -196,9 +176,8 @@
 
 .h5-3 {
   padding: 10px 0;
-  font-size: 0.875rem;
   color: #818181;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .more-card {
@@ -229,18 +208,11 @@
 }
 
 .d-h5 {
-  font-size: 0.9375rem;
-  font-weight: bold;
-}
-
-.debate-by {
-  font-size: 0.875rem;
+  /* font-weight: bold; */
 }
 
 .debate-name {
-  font-weight: bold;
-
-  /* font-size: 0.875rem; */
+  /* font-weight: bold; */
   padding: 0 10px;
 }
 
@@ -251,8 +223,7 @@
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  font-size: 0.875rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   bottom: 45%;
   left: 50%;
 }
@@ -279,8 +250,7 @@
 
 .feat-h5 {
   text-align: center;
-  font-size: 0.9375rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 8px 0;
 }
 
@@ -288,15 +258,13 @@
   background: red;
   color: white;
   padding: 4px 10px;
-  font-size: 0.875rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .mag-trans {
   color: red;
   padding: 4px 10px;
-  font-size: 0.875rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .mag-tag {
@@ -308,11 +276,16 @@
 }
 
 .cat-h3 {
-  font-size: 1.0625rem;
   padding: 20px 0 8px 0;
   color: red;
-  font-weight: bold;
+  /* font-weight: bold; */
   border-top: 1px solid #e0e0e0;
+}
+
+.cat-img {
+  height: 95px;
+  width: 95px;
+  object-fit: cover;
 }
 
 /* subscribe section starts here */
@@ -337,8 +310,17 @@
   left: 75px;
 }
 
+.email-img-div {
+  width: 182px;
+  height: 315px;
+  overflow: hidden;
+  /* height: 19.6875rem; */
+}
+
 .email-img {
-  height: 19.6875rem;
+  /* width: 182px; */
+  /* height: 315px; */
+  /* object-fit: cover; */
 }
 
 /* footer starts here */
@@ -353,7 +335,7 @@
 }
 
 .ft-icon {
-  font-size: 22px;
+  font-size: 1.375rem;
   padding: 0 5px;
   color: gray;
 }
@@ -368,7 +350,7 @@
 
 .ft-span {
   padding: 0 10px;
-  font-size: 0.8125rem;
+  font-size: 13px;
   border-right: 1px solid #ccc;
   margin: 5px;
 }
@@ -388,6 +370,24 @@
 @media (max-width: 992px) {
   .nav-1 {
     height: 50px;
+  }
+
+  .sub-card {
+    position: relative;
+    justify-content: center;
+  }
+
+  .sub-body {
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+  }
+
+  .email-img-div {
+    width: 191px;
+    height: 232px;
+    overflow: hidden;
+    /* height: 19.6875rem; */
   }
 
   .main-section {

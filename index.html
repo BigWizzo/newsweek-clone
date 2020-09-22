@@ -1,1546 +1,1997 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/c7d73dbfbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <script src="https://kit.fontawesome.com/c7d73dbfbb.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
+    <title>Newsweek Clone</title>
+  </head>
 
-  <title>Newsweek Clone</title>
-</head>
-
-<body>
-  <nav class="nav-1 container-fluid">
-    <div class="row">
-      <div class="col-lg-4 d-none d-lg-block d-xl-block">
-        <div class="my-nav-weather">
-          <img src="30.png" alt="" class="weather" />
-          <span class="first-span">30, Belgrade, RS &nbsp;<i class="fas fa-chevron-right"></i></span>
-          <br />
-          <span class="second-span">Wed, Sep 16, 2020</span>
+  <body>
+    <nav class="nav-1 fixed-top container-fluid">
+      <div class="row">
+        <div class="col-lg-4 d-none d-lg-block d-xl-block">
+          <div class="my-nav-weather">
+            <img src="30.png" alt="" class="weather" />
+            <span class="first-span font-weight-bold font-15"
+              >30, Belgrade, RS &nbsp;<i class="fas fa-chevron-right"></i
+            ></span>
+            <br />
+            <span class="second-span">Wed, Sep 16, 2020</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-4 d-xl-block d-lg-block">
+          <div class="my-nav-1">
+            <img
+              src="./images/images.png"
+              alt="Responsive image"
+              class="h-100 w-100"
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-8 nav-btns row align-items-center justify-content-end"
+        >
+          <button
+            type="submit"
+            class="d-none d-lg-block btn-log in font-weight-bold"
+          >
+            LOGIN</button
+          >&nbsp;&nbsp;
+          <i class="d-lg-none fas fa-user-alt"></i>
+          <button
+            type="button"
+            class="btn btn-primary btn-sm bg-warning border-0 nav-subscribe font-weight-bold mx-3 font-17"
+          >
+            SUBSCRIBE ></button
+          ><i class="d-lg-none d-xl-none fas fa-bars"></i>
         </div>
       </div>
-      <div class="col-lg-4 col-4 d-xl-block d-lg-block">
-        <div class="my-nav-1">
-          <img src="./images/images.png" alt="Responsive image" class="h-100 w-100" />
-        </div>
+    </nav>
+    <!--  -->
+    <nav class="btm-nav d-none d-lg-block">
+      <div class="navbar navbar-expand">
+        <ul class="navbar-nav mt-2">
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >U.S.</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >World</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >Buisness</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >Tech & Science</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >Culture</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >Newsgeek</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >Sports</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+            >
+              Health</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >The Debate</a
+            >
+          </li>
+          <li class="nav-item pr-1">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+              >Vantage</a
+            >
+          </li>
+          <li class="nav-items">
+            <a
+              class="nav-link font-weight-bold nav-mid font-weight-bold"
+              href="#"
+            >
+              Weather</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input
+            class="border-0 nav-input"
+            type="search"
+            name="search"
+            placeholder="Search"
+          /><i class="fas fa-search"></i>
+        </form>
       </div>
-      <div class="col-lg-4 col-8 nav-btns row align-items-center justify-content-end">
-        <button type="submit" class="d-none d-lg-block btn-login">
-          LOGIN</button>&nbsp;&nbsp;
-        <i class="d-lg-none fas fa-user-alt"></i>
-        <button type="button" class="btn btn-primary btn-sm bg-warning border-0 nav-subscribe mx-3">
-          SUBSCRIBE >
-        </button><i class="d-lg-none d-xl-none fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
-  <!--  -->
-  <nav class="btm-nav d-none d-lg-block">
-    <div class="navbar navbar-expand">
-      <ul class="navbar-nav mt-2">
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">U.S.</a>
+    </nav>
+
+    <nav class="navbar d-none d-lg-block navbar-expand love">
+      <ul class="nav navbar-nav">
+        <li class="nav-item-nav">
+          <a
+            class="nav-link font-weight-bold nav-link font-weight-bold-dark disabled"
+            aria-disabled="true"
+            href="#"
+            >TRENDING</a
+          >
         </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">World</a>
+        <li class="nav-item-nav">
+          <a class="nav-link font-weight-bold" href="#">DONALD TRUMP</a>
         </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">Buisness</a>
+        <li class="nav-item-nav">
+          <a class="nav-link font-weight-bold" href="#">JOE BIDEN</a>
         </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">Tech & Science</a>
+        <li class="nav-item-nav">
+          <a class="nav-link font-weight-bold" href="#">CHINA</a>
         </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">Culture</a>
+        <li class="nav-item-nav">
+          <a class="nav-link font-weight-bold" href="#">CORONAVIRUS</a>
         </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">Newsgeek</a>
-        </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">Sports</a>
-        </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#"> Health</a>
-        </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">The Debate</a>
-        </li>
-        <li class="nav-item pr-1">
-          <a class="nav-link nav-mid" href="#">Vantage</a>
-        </li>
-        <li class="nav-items">
-          <a class="nav-link nav-mid" href="#"> Weather</a>
+        <li class="nav-item-nav">
+          <a class="nav-link font-weight-bold" href="#">ELECTIONS 2020</a>
         </li>
       </ul>
-      <form class="form-inline">
-        <input class="border-0 nav-input" type="search" name="search" placeholder="Search" /><i
-          class="fas fa-search"></i>
-      </form>
-    </div>
-  </nav>
+    </nav>
 
-  <nav class="navbar d-none d-lg-block navbar-expand love">
-    <ul class="nav navbar-nav">
-      <li class="nav-item-nav">
-        <a class="nav-link nav-link-dark disabled" aria-disabled="true" href="#">TRENDING</a>
-      </li>
-      <li class="nav-item-nav">
-        <a class="nav-link" href="#">DONALD TRUMP</a>
-      </li>
-      <li class="nav-item-nav">
-        <a class="nav-link" href="#">JOE BIDEN</a>
-      </li>
-      <li class="nav-item-nav">
-        <a class="nav-link" href="#">CHINA</a>
-      </li>
-      <li class="nav-item-nav">
-        <a class="nav-link" href="#">CORONAVIRUS</a>
-      </li>
-      <li class="nav-item-nav">
-        <a class="nav-link" href="#">ELECTIONS 2020</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- *** The main section starts here *** -->
-  <main class="container-fluid main-section">
-    <!-- *** The top section starts here *** -->
-    <div class="row top-section">
-      <div class="col-12 order-2 order-md-1 col-md-5 col-lg-3 featured">
-        <h4 class="fam-hd text-secondary mt-3">Featured Stories</h4>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1637522/trump.jpg" alt="Card image cap" />
-            <div class="feature-tag">POLITICS</div>
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Six Standout Moments From Trump's ABC News Town Hall
-            </h5>
-            <p class="card-text font-15">
-              The president defended his actions in regards to the coronavirus
-              crisis and was also pressed on issues such as law and order.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1637532/trump-tower.jpg"
-              alt="Card image cap" />
-            <div class="feature-tag">U.S</div>
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Chicago Police Guard Trump Tower Amid Mexican Independence Day
-              Celebrations
-            </h5>
-            <p class="card-text font-15">
-              Officials blocked off several streets in the downtown area,
-              citing traffic from the celebrations ahead of Mexico's
-              Independence Day on September 16.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1637600/trump.jpg" alt="Card image cap" />
-            <div class="feature-tag">POLITICS</div>
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Amid Stimulus Impasse, Trump Says He'll Talk to Pelosi 'At The
-              Right Time'
-            </h5>
-            <p class="card-text font-15">
-              The president has previously blamed the Democrats for the delay
-              in securing a further relief package, suggesting they think one
-              will boost his election chances.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1637535/rep-eliot-engel-house-committee-foreign-affairs.jpg"
-              alt="Card image cap" />
-            <div class="feature-tag">POLITICS</div>
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              House Committee Says State Dept. Tried to Hide Casualties in
-              Arms Report
-            </h5>
-            <p class="card-text font-15">
-              The House Foreign Affairs Committee released correspondence
-              which it says shows the State Department's attempts to redact
-              civilian casualties information from a report into arms sale to
-              three Gulf states.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1631522/donald-trump.jpg"
-              alt="Card image cap" />
-            <div class="feature-tag">POLITICS</div>
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              The Trump Campaign Believes It Has Biden On the Ropes. Here's
-              Why
-            </h5>
-            <p class="card-text font-15">
-              Campaign manager Bill Stepien is reassuring nervous Republican
-              donors that despite being outspent so far, the president's
-              campaign has big plans.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png"
-              alt="Card image cap" />
-            <div class="feature-tag blue">RANKINGS</div>
-          </div>
-          <div class="card-body ranking-border">
-            <h5 class="card-title fam-hd">Best Online Shops 2021</h5>
-            <p class="card-text font-15">
-              Newsweek and Statista are recognizing 1,000 shops across 39
-              categories in eight groups.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1627222/americas-best-physical-rehabilitation-centers-2020.png"
-              alt="Card image cap" />
-            <div class="feature-tag blue">RANKINGS</div>
-          </div>
-          <div class="card-body ranking-border">
-            <h5 class="card-title fam-hd">
-              America's Best Physical Rehabilitation Centers 2020
-            </h5>
-            <p class="card-text font-15">
-              Finding reliable rehabilitation can be a challenge. We partnered
-              with Statista to rank the country's Best Physical Rehabilitation
-              Centers.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1617158/brandspark.png"
-              alt="Card image cap" />
-            <div class="feature-tag blue">TAKE THE SURVEY</div>
-          </div>
-          <div class="card-body ranking-border">
-            <h5 class="card-title fam-hd">
-              What Brands do You Trust the Most?
-            </h5>
-            <p class="card-text font-15">
-              Tell us for a chance to win. 2020 Brandspark Most Trusted
-              Awards. Voted by consumers like you.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1610683/best-maternity-hospitals-2020.png"
-              alt="Card image cap" />
-            <div class="feature-tag blue">RANKINGS</div>
-          </div>
-          <div class="card-body ranking-border">
-            <h5 class="card-title fam-hd">Best Maternity Hospitals 2020</h5>
-            <p class="card-text font-15">
-              The facilities cited by Newsweek are an elite group
-              demonstrating excellence in maternity care. Check the full list
-              here
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 order-1 order-md-2 col-md-7 col-lg-5 top-story">
-        <h4 class="fam-hd text-secondary mt-3">Top Story</h4>
-        <div class="card">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1637691/hurricane-sally.jpg?w=591&h=364&f=f8d742766e40bc61e73ea94655dd0700"
-              alt="Card image cap" />
-            <div class="feature-tag">U.S.</div>
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Hurricane Sally Leaves Over 440,000 People Along Gulf Coast
-              Without Power
-            </h5>
-            <p class="card-text font-15">
-              According to Poweroutage.US, over 440,000 residents were left
-              without power, with at least 234,103 in Alabama, 204,410 in
-              Florida and 5,406 in Mississippi.
-            </p>
-          </div>
-        </div>
-        <div class="my-turn">
-          <h4 class="fam-hd text-secondary mt-3">My Turn</h4>
-          <div class="row">
-            <div class="card col-md-4">
-              <div class="feature-img-div img-my-turn">
-                <img class="card-img-top idk w-100 h-100"
-                  src="	https://d.newsweek.com/en/full/1637610/sapiosexuality-relationships-dating.jpg"
-                  alt="Card image cap" />
-              </div>
-              <div class="my-turn-3">
-                <h5 class="h5-3">
-                  "This Is What It's Like to Be Sapiosexual"
-                </h5>
-              </div>
+    <!-- *** The main section starts here *** -->
+    <main class="container-fluid main-section">
+      <!-- *** The top section starts here *** -->
+      <div class="row top-section">
+        <div class="col-12 order-2 order-md-1 col-md-5 col-lg-3 featured">
+          <h4 class="fam-hd font-weight-bold text-secondary mt-3">
+            Featured Stories
+          </h4>
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637522/trump.jpg"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold">POLITICS</div>
             </div>
-            <div class="card col-md-4">
-              <div class="feature-img-div img-my-turn">
-                <img class="card-img-top idk w-100 h-100"
-                  src="https://d.newsweek.com/en/full/1635953/covid-19-coronavirus-vaccine-doctor-trials.jpg"
-                  alt="Card image cap" />
-              </div>
-              <div class="my-turn-3">
-                <h5 class="h5-3">'I'm Working on a COVID-19 Vaccine'</h5>
-              </div>
-            </div>
-            <div class="card col-md-4">
-              <div class="feature-img-div img-my-turn">
-                <img class="card-img-top idk w-100 h-100"
-                  src="https://d.newsweek.com/en/full/1635772/marriage-divorce-relationships-therapy.jpg "
-                  alt="Card image cap" />
-              </div>
-              <div class="my-turn-3">
-                <h5 class="h5-3">
-                  'I'm a Marriage Therapist, Here Are 3 Ways Marriage Has
-                  Changed'
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="my-turn">
-          <h4 class="fam-hd text-secondary mt-3">Culture & Travel</h4>
-          <div class="row">
-            <div class="card col-md-4">
-              <div class="feature-img-div img-my-turn">
-                <img class="card-img-top idk w-100 h-100" src="https://d.newsweek.com/en/full/1635019/san-marino.jpg"
-                  alt="Card image cap" />
-                <div class="feature-tag blue">TRAVEL</div>
-              </div>
-              <div class="my-turn-3">
-                <h5 class="h5-3">
-                  The Countries With the Least Amount of Travel Buzz,
-                  According to Google
-                </h5>
-              </div>
-            </div>
-            <div class="card col-md-4">
-              <div class="feature-img-div img-my-turn">
-                <img class="card-img-top idk w-100 h-100"
-                  src="https://d.newsweek.com/en/full/1637610/sapiosexuality-relationships-dating.jpg"
-                  alt="Card image cap" />
-                <div class="feature-tag blue">INDIA</div>
-              </div>
-              <div class="my-turn-3">
-                <h5 class="h5-3">
-                  Delhi's 'Hijabi Biker' Breaks India's Stereotypes Riding
-                  'Ninja' Motorbike
-                </h5>
-              </div>
-            </div>
-            <div class="card col-md-4">
-              <div class="feature-img-div img-my-turn">
-                <img class="card-img-top idk w-100 h-100" src="https://d.newsweek.com/en/full/1629519/met.jpg"
-                  alt="Card image cap" />
-                <div class="feature-tag blue">MUSEUMS</div>
-              </div>
-              <div class="my-turn-3">
-                <h5 class="h5-3">
-                  Planning a Trip to One of NYC's Recently Opened Museums?
-                  What to Know
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="more-stories">
-          <h4 class="fam-hd text-secondary mt-3">More Stories</h4>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637537/tucker-carlson-tonight-dr-li-meng-yan.png"
-                class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Twitter Suspends Chinese Virologist Who Claimed Coronavirus
-                Was Made in Lab
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Six Standout Moments From Trump's ABC News Town Hall
               </h5>
               <p class="card-text font-15">
-                The social media profile of Dr. Li-Meng Yan went dark this
-                week as the academic claimed to have evidence the Chinese
-                government was involved
+                The president defended his actions in regards to the coronavirus
+                crisis and was also pressed on issues such as law and order.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637520/anthony-fauci-coronavirus-covid19-getty.jpg"
-                class="mr-3 w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637532/trump-tower.jpg"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold">U.S</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                What Did Vermont Get Right in Coronavirus Fight? Fauci Hails
-                State
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Chicago Police Guard Trump Tower Amid Mexican Independence Day
+                Celebrations
               </h5>
               <p class="card-text font-15">
-                "I wonder if I could bottle that and take it with me when I go
-                around talking to other parts of the country," Fauci said.
-                "This should be the model for the country."
+                Officials blocked off several streets in the downtown area,
+                citing traffic from the celebrations ahead of Mexico's
+                Independence Day on September 16.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637648/kim-kardashian.jpg" class="mr-3 w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637600/trump.jpg"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold">POLITICS</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Every Celebrity Boycotting Facebook and Instagram
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Amid Stimulus Impasse, Trump Says He'll Talk to Pelosi 'At The
+                Right Time'
               </h5>
               <p class="card-text font-15">
-                From Kim Kardashian to Mark Ruffalo—here are the celebrities
-                who are boycotting their social media accounts to protest the
-                spread of hate speech and misinformation on Facebook and
-                Instagram.
+                The president has previously blamed the Democrats for the delay
+                in securing a further relief package, suggesting they think one
+                will boost his election chances.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637628/kamala-harris.jpg" class="w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637535/rep-eliot-engel-house-committee-foreign-affairs.jpg"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold">POLITICS</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Harris Hits Trump on COVID-19 in Battleground Nevada, As Biden
-                Leads Polls
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                House Committee Says State Dept. Tried to Hide Casualties in
+                Arms Report
               </h5>
               <p class="card-text font-15">
-                The Democratic vice presidential candidate visited the state
-                days after the president held an in-person campaign rally
-                there.
+                The House Foreign Affairs Committee released correspondence
+                which it says shows the State Department's attempts to redact
+                civilian casualties information from a report into arms sale to
+                three Gulf states.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637531/joe-biden-florida-event.jpg" class="w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1631522/donald-trump.jpg"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold">POLITICS</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Trump Shares Doctored Video of Biden Playing NWA's 'F*** Tha
-                Police'
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                The Trump Campaign Believes It Has Biden On the Ropes. Here's
+                Why
               </h5>
               <p class="card-text font-15">
-                The president's attempt to mock his Democratic rival follows
-                accusations the former vice president supports defunding the
-                police.
+                Campaign manager Bill Stepien is reassuring nervous Republican
+                donors that despite being outspent so far, the president's
+                campaign has big plans.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1635486/auschwitz.jpg" class="w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1630878/best-online-shops-2021.png"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold blue">RANKINGS</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                11 Percent of Millennials and Gen Z Believe Jews Caused the
-                Holocaust: Poll
+            <div class="card-body ranking-border">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Best Online Shops 2021
               </h5>
               <p class="card-text font-15">
-                The survey also found that 59 percent believe something like
-                the Holocaust could happen again.
+                Newsweek and Statista are recognizing 1,000 shops across 39
+                categories in eight groups.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637518/meghan-markle-prince-harry-edinburgh.jpg" class="w-100"
-                alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1627222/americas-best-physical-rehabilitation-centers-2020.png"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold blue">RANKINGS</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Barbados Removes Queen Elizabeth II Amid Claims Prince Harry
-                Proved Right
+            <div class="card-body ranking-border">
+              <h5 class="card-title fam-hd font-weight-bold">
+                America's Best Physical Rehabilitation Centers 2020
               </h5>
               <p class="card-text font-15">
-                Queen Elizabeth II will no longer be the Barbados head of
-                state after November 2021 but the fury of some Brits has led
-                to claims Prince Harry was right about racism.
+                Finding reliable rehabilitation can be a challenge. We partnered
+                with Statista to rank the country's Best Physical Rehabilitation
+                Centers.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1316381/cancer-patient-doctor-hospital-getty-stock.jpg"
-                class="w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1617158/brandspark.png"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold blue">
+                TAKE THE SURVEY
+              </div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Son Dies of Cancer After Parents Say They Were Unable to Pay
-                for Treatment
+            <div class="card-body ranking-border">
+              <h5 class="card-title fam-hd font-weight-bold">
+                What Brands do You Trust the Most?
               </h5>
               <p class="card-text font-15">
-                Maria Urias-Astorga and Ramiro Miranda-Quinonez are facing
-                child abuse charges after their 14-year-old son died suffering
-                from a tumor which they say went
+                Tell us for a chance to win. 2020 Brandspark Most Trusted
+                Awards. Voted by consumers like you.
               </p>
             </div>
           </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637480/democrats-could-pull-marijuana-legislation.jpg"
-                class="w-100" alt="..." />
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1610683/best-maternity-hospitals-2020.png"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold blue">RANKINGS</div>
             </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Up in Smoke? Vote to Legalize Pot Becomes Hazy Amid Democrat
-                Pushback
+            <div class="card-body ranking-border">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Best Maternity Hospitals 2020
               </h5>
               <p class="card-text font-15">
-                There is mounting pushback to nix next week's planned vote to
-                decriminalize marijuana in the House among rank-and-file
-                members, particularly those in swing
-              </p>
-            </div>
-          </div>
-          <div class="row more-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637615/mizzou.jpg" class="w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                University of Missouri Expels Two Students for Violating
-                Coronavirus Rules
-              </h5>
-              <p class="card-text font-15">
-                The students were found to have taken "willful and knowing
-                actions that threatened the safety of our campus and
-                community."
-              </p>
-            </div>
-          </div>
-          <div class="row more-card">
-            <div class="op-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637611/dominic-raab.jpg" class="w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Nancy Pelosi Meets U.K. Officials to Voice Brexit Concerns
-              </h5>
-              <p class="card-text font-15">
-                Pelosi had warned that there was "absolutely no chance of a
-                U.S.-U.K. trade agreement passing the Congress" if the U.K.
-                undermined the Northern Ireland peace agreement.
+                The facilities cited by Newsweek are an elite group
+                demonstrating excellence in maternity care. Check the full list
+                here
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 order-3 order-md-3 order-md-3 col-lg-4 debate">
-        <div class="the-debate mr-3 ml-3">
-          <h4 class="fam-hd text-secondary mt-3">The debate</h4>
-          <div class="debate">
-            <div class="row d-card-top">
-              <div class="op-img-div">
-                <img src="https://d.newsweek.com/en/full/1635852/jamil-n-jaffer.png" class="w-100 h-100 img-h95"
-                  alt="..." />
+        <div class="col-12 order-1 order-md-2 col-md-7 col-lg-5 top-story">
+          <h4 class="fam-hd font-weight-bold text-secondary mt-3">Top Story</h4>
+          <div class="card">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637691/hurricane-sally.jpg?w=591&h=364&f=f8d742766e40bc61e73ea94655dd0700"
+                alt="Card image cap"
+              />
+              <div class="feature-tag font-weight-bold">U.S.</div>
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Hurricane Sally Leaves Over 440,000 People Along Gulf Coast
+                Without Power
+              </h5>
+              <p class="card-text font-15">
+                According to Poweroutage.US, over 440,000 residents were left
+                without power, with at least 234,103 in Alabama, 204,410 in
+                Florida and 5,406 in Mississippi.
+              </p>
+            </div>
+          </div>
+          <div class="my-turn">
+            <h4 class="fam-hd font-weight-bold text-secondary mt-3">My Turn</h4>
+            <div class="row">
+              <div class="card col-md-4">
+                <div class="feature-img-div img-my-turn">
+                  <img
+                    class="card-img-top idk w-100 h-100"
+                    src="	https://d.newsweek.com/en/full/1637610/sapiosexuality-relationships-dating.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="my-turn-3">
+                  <h5 class="h5-3 font-weight-bold font-14">
+                    "This Is What It's Like to Be Sapiosexual"
+                  </h5>
+                </div>
               </div>
-              <div class="media-body col-9">
-                <h5 class="d-h5">
-                  The Best (Cyber) Defense Is a Good (Cyber) Offense
-                </h5>
-                <div class="debate-by">
-                  <span class="d-by">BY</span><span class="debate-name">JAMIL N. JAFFER</span>
+              <div class="card col-md-4">
+                <div class="feature-img-div img-my-turn">
+                  <img
+                    class="card-img-top idk w-100 h-100"
+                    src="https://d.newsweek.com/en/full/1635953/covid-19-coronavirus-vaccine-doctor-trials.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="my-turn-3">
+                  <h5 class="h5-3 font-weight-bold font-14">
+                    'I'm Working on a COVID-19 Vaccine'
+                  </h5>
+                </div>
+              </div>
+              <div class="card col-md-4">
+                <div class="feature-img-div img-my-turn">
+                  <img
+                    class="card-img-top idk w-100 h-100"
+                    src="https://d.newsweek.com/en/full/1635772/marriage-divorce-relationships-therapy.jpg "
+                    alt="Card image cap"
+                  />
+                </div>
+                <div class="my-turn-3">
+                  <h5 class="h5-3 font-weight-bold font-14">
+                    'I'm a Marriage Therapist, Here Are 3 Ways Marriage Has
+                    Changed'
+                  </h5>
                 </div>
               </div>
             </div>
-            <div class="row d-card-btm">
-              <div class="media-body col-9">
-                <h5 class="d-h5">
-                  The U.S. Needs a Cyber Strategy Designed for Defense
-                </h5>
-                <div class="debate-by">
-                  <span class="d-by">BY</span><span class="debate-name">BY BONNIE KRISTIAN</span>
+          </div>
+          <div class="my-turn">
+            <h4 class="fam-hd font-weight-bold text-secondary mt-3">
+              Culture & Travel
+            </h4>
+            <div class="row">
+              <div class="card col-md-4">
+                <div class="feature-img-div img-my-turn">
+                  <img
+                    class="card-img-top idk w-100 h-100"
+                    src="https://d.newsweek.com/en/full/1635019/san-marino.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="feature-tag font-weight-bold blue">TRAVEL</div>
+                </div>
+                <div class="my-turn-3">
+                  <h5 class="h5-3 font-weight-bold font-14">
+                    The Countries With the Least Amount of Travel Buzz,
+                    According to Google
+                  </h5>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="card col-md-4">
+                <div class="feature-img-div img-my-turn">
+                  <img
+                    class="card-img-top idk w-100 h-100"
+                    src="https://d.newsweek.com/en/full/1637610/sapiosexuality-relationships-dating.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="feature-tag font-weight-bold blue">INDIA</div>
+                </div>
+                <div class="my-turn-3">
+                  <h5 class="h5-3 font-weight-bold font-14">
+                    Delhi's 'Hijabi Biker' Breaks India's Stereotypes Riding
+                    'Ninja' Motorbike
+                  </h5>
+                </div>
+              </div>
+              <div class="card col-md-4">
+                <div class="feature-img-div img-my-turn">
+                  <img
+                    class="card-img-top idk w-100 h-100"
+                    src="https://d.newsweek.com/en/full/1629519/met.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="feature-tag font-weight-bold blue">MUSEUMS</div>
+                </div>
+                <div class="my-turn-3">
+                  <h5 class="h5-3 font-weight-bold font-14">
+                    Planning a Trip to One of NYC's Recently Opened Museums?
+                    What to Know
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-stories">
+            <h4 class="fam-hd font-weight-bold text-secondary mt-3">
+              More Stories
+            </h4>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637537/tucker-carlson-tonight-dr-li-meng-yan.png"
+                  class="mr-3 w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Twitter Suspends Chinese Virologist Who Claimed Coronavirus
+                  Was Made in Lab
+                </h5>
+                <p class="card-text font-15">
+                  The social media profile of Dr. Li-Meng Yan went dark this
+                  week as the academic claimed to have evidence the Chinese
+                  government was involved
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637520/anthony-fauci-coronavirus-covid19-getty.jpg"
+                  class="mr-3 w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  What Did Vermont Get Right in Coronavirus Fight? Fauci Hails
+                  State
+                </h5>
+                <p class="card-text font-15">
+                  "I wonder if I could bottle that and take it with me when I go
+                  around talking to other parts of the country," Fauci said.
+                  "This should be the model for the country."
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637648/kim-kardashian.jpg"
+                  class="mr-3 w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Every Celebrity Boycotting Facebook and Instagram
+                </h5>
+                <p class="card-text font-15">
+                  From Kim Kardashian to Mark Ruffalo—here are the celebrities
+                  who are boycotting their social media accounts to protest the
+                  spread of hate speech and misinformation on Facebook and
+                  Instagram.
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637628/kamala-harris.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Harris Hits Trump on COVID-19 in Battleground Nevada, As Biden
+                  Leads Polls
+                </h5>
+                <p class="card-text font-15">
+                  The Democratic vice presidential candidate visited the state
+                  days after the president held an in-person campaign rally
+                  there.
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637531/joe-biden-florida-event.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Trump Shares Doctored Video of Biden Playing NWA's 'F*** Tha
+                  Police'
+                </h5>
+                <p class="card-text font-15">
+                  The president's attempt to mock his Democratic rival follows
+                  accusations the former vice president supports defunding the
+                  police.
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1635486/auschwitz.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  11 Percent of Millennials and Gen Z Believe Jews Caused the
+                  Holocaust: Poll
+                </h5>
+                <p class="card-text font-15">
+                  The survey also found that 59 percent believe something like
+                  the Holocaust could happen again.
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637518/meghan-markle-prince-harry-edinburgh.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Barbados Removes Queen Elizabeth II Amid Claims Prince Harry
+                  Proved Right
+                </h5>
+                <p class="card-text font-15">
+                  Queen Elizabeth II will no longer be the Barbados head of
+                  state after November 2021 but the fury of some Brits has led
+                  to claims Prince Harry was right about racism.
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1316381/cancer-patient-doctor-hospital-getty-stock.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Son Dies of Cancer After Parents Say They Were Unable to Pay
+                  for Treatment
+                </h5>
+                <p class="card-text font-15">
+                  Maria Urias-Astorga and Ramiro Miranda-Quinonez are facing
+                  child abuse charges after their 14-year-old son died suffering
+                  from a tumor which they say went
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637480/democrats-could-pull-marijuana-legislation.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Up in Smoke? Vote to Legalize Pot Becomes Hazy Amid Democrat
+                  Pushback
+                </h5>
+                <p class="card-text font-15">
+                  There is mounting pushback to nix next week's planned vote to
+                  decriminalize marijuana in the House among rank-and-file
+                  members, particularly those in swing
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="more-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637615/mizzou.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  University of Missouri Expels Two Students for Violating
+                  Coronavirus Rules
+                </h5>
+                <p class="card-text font-15">
+                  The students were found to have taken "willful and knowing
+                  actions that threatened the safety of our campus and
+                  community."
+                </p>
+              </div>
+            </div>
+            <div class="row more-card">
+              <div class="op-img-div col-3">
+                <img
+                  src="https://d.newsweek.com/en/full/1637611/dominic-raab.jpg"
+                  class="w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Nancy Pelosi Meets U.K. Officials to Voice Brexit Concerns
+                </h5>
+                <p class="card-text font-15">
+                  Pelosi had warned that there was "absolutely no chance of a
+                  U.S.-U.K. trade agreement passing the Congress" if the U.K.
+                  undermined the Northern Ireland peace agreement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 order-3 order-md-3 order-md-3 col-lg-4 debate">
+          <div class="the-debate mr-3 ml-3">
+            <h4 class="fam-hd font-weight-bold text-secondary mt-3">
+              The debate
+            </h4>
+            <div class="debate">
+              <div class="row d-card-top">
                 <div class="op-img-div">
-                  <img src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png" class="w-100 h-100 img-h95"
-                    alt="..." />
+                  <img
+                    src="https://d.newsweek.com/en/full/1635852/jamil-n-jaffer.png"
+                    class="w-100 h-100 img-h95"
+                    alt="..."
+                  />
+                </div>
+                <div class="media-body col-9">
+                  <h5 class="d-h5 font-weight-bold font-15">
+                    The Best (Cyber) Defense Is a Good (Cyber) Offense
+                  </h5>
+                  <div class="debate-by font-14">
+                    <span class="d-by">BY</span
+                    ><span class="debate-name font-weight-bold"
+                      >JAMIL N. JAFFER</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="row d-card-btm">
+                <div class="media-body col-9">
+                  <h5 class="d-h5 font-weight-bold font-15">
+                    The U.S. Needs a Cyber Strategy Designed for Defense
+                  </h5>
+                  <div class="debate-by font-14">
+                    <span class="d-by">BY</span
+                    ><span class="debate-name font-weight-bold"
+                      >BY BONNIE KRISTIAN</span
+                    >
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="op-img-div">
+                    <img
+                      src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png"
+                      class="w-100 h-100 img-h95"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row justify-content-center align-items-center vs font-weight-bold font-14"
+              >
+                vs
+              </div>
+            </div>
+          </div>
+          <div class="opinion mr-3 ml-3">
+            <h4 class="fam-hd font-weight-bold text-secondary mt-3">Opinion</h4>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1636413/gary-bauer-nury-turkel.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  Trump Is a Disaster on Climate Change. But We Can't Let Newsom
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"
+                    >GARY BAUER AND NURY TURKEL</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center align-items-center vs">
-              vs
-            </div>
-          </div>
-        </div>
-        <div class="opinion mr-3 ml-3">
-          <h4 class="fam-hd text-secondary mt-3">Opinion</h4>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1636413/gary-bauer-nury-turkel.png" class="w-100 h-100 img-h95"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                Trump Is a Disaster on Climate Change. But We Can't Let Newsom
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name">GARY BAUER AND NURY TURKEL</span>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1635852/jamil-n-jaffer.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
               </div>
-            </div>
-          </div>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1635852/jamil-n-jaffer.png" class="w-100 h-100 img-h95"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                On Taiwan, Moral Courage from the Czech Republic
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name">NATAN SHARANSKY</span>
-              </div>
-            </div>
-          </div>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png" class="w-100 h-100 img-h95"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                Trump Is a Disaster on Climate Change. But We Can't Let Newsom
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name">GARY BAUER AND NURY TURKEL</span>
-              </div>
-            </div>
-          </div>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1636452/jane-fonda.png" class="w-100 h-100 img-h95" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                On Taiwan, Moral Courage from the Czech Republic
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name"> PETER ROFF</span>
-              </div>
-            </div>
-          </div>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1635852/jamil-n-jaffer.png" class="w-100 h-100 img-h95"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                The Abraham Accords Are a Sanctification of God's Name
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name">NATAN SHARANSKY</span>
-              </div>
-            </div>
-          </div>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1636413/gary-bauer-nury-turkel.png" class="w-100 h-100 img-h95"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                Trump Is a Disaster on Climate Change. But We Can't Let Newsom
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name"> PETER ROFF</span>
-              </div>
-            </div>
-          </div>
-          <div class="row opinion-card bdr-btm-lt">
-            <div class="op-img-div">
-              <img src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png" class="w-100 h-100 img-h95"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="d-h5">
-                The Abraham Accords Are a Sanctification of God's Name
-              </h5>
-              <div class="debate-by">
-                <span class="d-by">BY</span><span class="debate-name">JASON D. GREENBLATT</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sponsored">
-          <div class="card">
-            <div class="feature-img-div">
-              <img class="card-img-top" src="https://d.newsweek.com/en/full/1636229/image-2-startup-making-long.jpg"
-                alt="Card image cap" />
-              <div class="feature-tag blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body ranking-border">
-              <h5 class="card-title fam-hd">
-                This Startup Is Making Long Distance Real Estate Investing
-                Possible for Millennials
-              </h5>
-              <p class="card-text font-15">
-                75% of Roofstock users are first-time real estate investors,
-                and more than half are under 35.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="feature-img-div">
-              <img class="card-img-top" src="https://d.newsweek.com/en/full/1614497/kent-state-university.jpg"
-                alt="Card image cap" />
-              <div class="feature-tag blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body ranking-border">
-              <h5 class="card-title fam-hd">
-                What Could a Career in Engineering or Computer Science Do For
-                You?
-              </h5>
-              <p class="card-text font-15">
-                Could this be the perfect time for you to pursue a career in
-                engineering or computer science? Find out how to get started.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="feature-img-div">
-              <img class="card-img-top" src="https://d.newsweek.com/en/full/1606968/best-nursing-homes-2020.png"
-                alt="Card image cap" />
-              <div class="feature-tag blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body ranking-border">
-              <h5 class="card-title fam-hd">Best Nursing Homes 2021</h5>
-              <p class="card-text font-15">
-                Newsweek is partnering with the respected global data research
-                firm Statista Inc. to establish a ranking of Best Nursing
-                Homes 2021. If you work in this field, please participate in
-                our survey.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="feature-img-div">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1612630/sweet-james-accident-attorneys-v2.jpg"
-                alt="Card image cap" />
-              <div class="feature-tag blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body ranking-border">
-              <h5 class="card-title fam-hd">
-                America's Best Addiction Treatment Centers 2020
-              </h5>
-              <p class="card-text font-15">
-                Newsweek partnered with global market research firm Statista
-                Inc. to rank the best U.S. treatment facilities that focus on
-                addiction.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="feature-img-div">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1621635/americas-best-addiction-treatment-centers-2020.png"
-                alt="Card image cap" />
-              <div class="feature-tag blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body ranking-border">
-              <h5 class="card-title fam-hd">
-                What Makes the Best Lawyers Stand Out?
-              </h5>
-              <p class="card-text font-15">
-                The unthinkable has happened and you need a good lawyer to
-                turn to, how do you chose?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="feature-img-div">
-              <img class="card-img-top"
-                src="https://d.newsweek.com/en/full/1587568/infection-prevention-products-banner.jpg"
-                alt="Card image cap" />
-              <div class="feature-tag blue">SPONSORED INSIGHT</div>
-            </div>
-            <div class="card-body ranking-border">
-              <h5 class="card-title fam-hd">
-                Best Infection Prevention Products
-              </h5>
-              <p class="card-text font-15">
-                During the coronavirus outbreak, health care is more important
-                than ever. In Newsweek's first Best Health Care series, we
-                highlight the best infection prevention products.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row align-items-center justify-content-center section-topic">
-      <!-- <div class="col-"> -->
-      <span class="n-log">N</span>
-      <h2 class="topic-h2 mb-0">IN THE MAGAZINE</h2>
-      <!-- </div> -->
-    </div>
-
-    <!-- *** The "In The Magazine" section starts here *** -->
-    <div class="row in-the-magazine">
-      <!-- <div class="row"> -->
-      <div class="card col-md-3">
-        <div class="feature-img-div">
-          <img class="w-100" src="https://d.newsweek.com/en/full/1638209/cover-september-25-2020.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">SEPTEMBER 18 ISSUE</div>
-        </div>
-        <div class="row feat-body justify-content-center align-items-center">
-          <h5 class="feat-h5 mb-0">SEE ALL FEATURES ></h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft1.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">COVER</span><span class="mag-trans">NEWS</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            How the Pandemic Will Change the Way We Manage Money Forever
-          </h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft2.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">FEATURES</span><span class="mag-trans">NEWS</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            When Will There Be a COVID-19 Vaccine and Should You Trust That
-            It's Safe?
-          </h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft3.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">FEATURES</span><span class="mag-trans">NEWS</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Florida Dem Rep Shalala Admits Squad Sometimes Pisses Her Off,
-            Lets Loose on 'Idiotic' Trump
-          </h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft4.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">PERISCOPE</span><span class="mag-trans">POLITICS</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Florida Dem Rep Shalala Admits Squad Sometimes Pisses Her Off,
-            Lets Loose on 'Idiotic' Trump
-          </h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft5.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">FEATURES</span><span class="mag-trans">CULTURE</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Here Are the Young, Diverse Conservative Stars Progressives Need
-            to Fear
-          </h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft6.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">POLITICS</span><span class="mag-trans">NEWS</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Janelle Monáe's Film 'Antebellum' Shows the Horrors of Systemic
-            Racism
-          </h5>
-        </div>
-      </div>
-      <div class="card col-md-3">
-        <div class="mag-img-div">
-          <img class="w-100 h-100 mag-img" src="./images/ft7.jpg" alt="Card image cap" />
-        </div>
-        <div class="mag-tag">
-          <span class="red-bg">FOCUS</span><span class="mag-trans">CULTURE</span>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Dr. Fauci Would Bet 10 Cents on Trump Having Vaccine by November,
-            December
-          </h5>
-        </div>
-      </div>
-      <!-- </div> -->
-    </div>
-    <div class="row align-items-center justify-content-center section-topic">
-      <!-- <div class="col-"> -->
-      <span class="n-log">N</span>
-      <h2 class="topic-h2 mb-0">EDITORS PICK</h2>
-      <!-- </div> -->
-    </div>
-
-    <!-- *** The Editors Picks section starts here *** -->
-    <div class="row editors-picks">
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1637681/biden.jpg" alt="Card image cap" />
-          <div class="feature-tag">POLITICS</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            As Trump Boosts Ad Spend, Biden Unveils $65 Million Blitz in
-            Battlegrounds
-          </h5>
-          <p class="card-text font-15">
-            The Biden campaign announced the spending after Trump's team said
-            it would be spending an unspecified eight-figure sum on
-            advertisements.
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1638521/yellowstone.jpg" alt="Card image cap" />
-          <div class="feature-tag">TECH & SCIENCE</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Yellowstone Volcano Earthquake Swarm Sees 100 Events Recorded in
-            One Day
-          </h5>
-          <p class="card-text font-15">
-            Scientists say this is the best-recorded earthquake swarm to hit
-            Yellowstone and the team is now analyzing the data from it.
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1639294/basis-sex-ruth-ginsburg.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">CULTURE</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Janelle Monáe's Film 'Antebellum' Shows the Horrors of Systemic
-            Racism
-          </h5>
-          <p class="card-text font-15">
-            "We're in the middle of a revolution. We're in the middle of a
-            reckoning," Janelle Monáe told Newsweek.
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1638214/great-white-shark.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">TECH & SCIENCE</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Killer Whales 'Ripped Open' Great White Sharks, Ate Liver, Heart
-            and Testes
-          </h5>
-          <p class="card-text font-15">
-            Marine biologist describes injuries sustained by the sharks in
-            South Africa after being hunted by orca.
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1638408/covid-19-coronavirus-getty-new-york.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">HEALTH</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            You Are One Million Times More Likely to Catch Coronavirus Than
-            Win Lottery
-          </h5>
-          <p class="card-text font-15">
-            World Health Organization expert Dr. Mike Ryan said the chances of
-            catching the coronavirus are high.
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1638307/anti-racism-protest.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">WORLD</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Why Are Black People Still Paid Less Than Their White
-            Counterparts?
-          </h5>
-          <p class="card-text font-15">
-            The ethnicity pay gap "is costing the British economy as much as
-            £24 billion ($31 billion) a year."
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1636344/getty-images-california-fire.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">U.S</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            How and When Did the California Wildfires Start?
-          </h5>
-          <p class="card-text font-15">
-            Wildfires can be a natural occurrence or can be started by humans.
-          </p>
-        </div>
-      </div>
-      <div class="card col-md-6 col-lg-3">
-        <div class="feature-img-div">
-          <img class="card-img-top" src="https://d.newsweek.com/en/full/1561273/brad-pitt-jennifer-aniston-reunion.jpg"
-            alt="Card image cap" />
-          <div class="feature-tag">NEWS</div>
-        </div>
-        <div class="card-body card-body-pad">
-          <h5 class="card-title fam-hd">
-            Why Meghan Markle Losing Her Paparazzi Privacy Case is
-            'Impossible'
-          </h5>
-          <p class="card-text font-15">
-            The Duchess of Sussex may be virtually guaranteed victory in a law
-            suit against a major paparazzi agency operating in the U.K. and
-            U.S. thanks to a princess from Monaco, legal experts tell
-            Newsweek.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- *** The Categories section starts here *** -->
-    <div class="categories">
-      <h3 class="cat-h3">U.S</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1638757/i-voted-mail-stickers.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              N.C. Rejecting 4 Times As Many Black Voters' Ballots Compared
-              White Voters
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1638748/mecklenburg-county-board-elections.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Trump Says North Carolina Has 'Rigged Election in Waiting'
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 cat-col">
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638719/marco-rubio.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Republicans Refutes Trump's False Mail-In Voting Claims and
-                Offer A Warning
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638736/hawaiian-island.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Travelers to Hawaii Can Bypass 2-Week Quarantine With Negative
-                Test Result
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638722/trump-nevada-rally.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                How to Watch, Live Stream Trump's Re-Election Rally in
-                Mosinee, Wisconsin
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3 class="cat-h3">BUSINESS</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1636138/pennsylvania-mask-restrictions-lifted-judge.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Judge Rules Pennsylvania's 'New Normal' COVID Restrictions
-              Unconstitutional
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1635858/tiktok-sale.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              TikTok Chooses Oracle, a Rare Trump Ally in Silicon Valley, to
-              Sell Assets
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 cat-col">
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1631938/swan-dive-rochester-protests-destroyed.jpg"
-                class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Rochester Eatery Offered BLM Protesters Water Hours Before
-                Being Vandalized
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1631351/dunkin-donuts-santa-monica-california-2015.jpg"
-                class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Are Starbucks, Dunkin' Donuts Open on Labor Day? See Coffee
-                Shop Hours
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1629704/cover-pandemic-money-graphic.jpg" class="mr-3 w-100"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                How the Pandemic Will Change the Way We Manage Money Forever
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3 class="cat-h3">WORLD</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1638785/us-russia-military-northeast-syria.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Trump Must Talk to Russia and Syria If He Wants U.S. Out of War,
-              Allies Say
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1638756/srinagar-protest.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Indian Town Cuts Internet to Avoid More Protests Over Police
-              Custody Death
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 cat-col">
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638711/russia-belarus-slavic-brotherhood-2020.jpg"
-                class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Russia Eyes East and West Border Threats, Looks to China for
-                Closer Ties
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638415/joe-biden.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Joe Biden Warns Britain Over Brexit
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638328/usa-binary-map-smaller-version.jpg" class="mr-3 w-100"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                As U.S.-China Cyber Cold War Rages, Intellectual Property Is A
-                Costly Front
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3 class="cat-h3">TECH & SCIENCE</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1638595/whale-ship-dead.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              California Whales Are Being Killed by Ships. AI Might Be Able to
-              Save Them
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1637737/elon-musk.jpg" alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Musk Says Electric Cars in Tunnels Under Cities Will 'Feel Like
-              Warp Drive'
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 cat-col">
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638418/oculus-quest.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Facebook VR Guru Embarrassed by Lack of Social Experiences
-                During COVID-19
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637652/mark-zuckerberg.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Facebook Refuses to Comment on 24-Hour Instagram Boycott by
-                Celebrities
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1637537/tucker-carlson-tonight-dr-li-meng-yan.png"
-                class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Tucker Carlson Tonight - Dr. Li-Meng Yan Twitter Suspends
-                Chinese Virologist Who Claimed Coronavirus Was Made in Lab
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3 class="cat-h3">CULTURE</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1638747/electrodes.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">Who Was Robert Galbraith Heath?</h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top"
-              src="https://d.newsweek.com/en/full/1638739/hogwarts-legacy-harry-potter-game-screenshot-troll.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              'Hogwarts Legacy' Doesn't Have JK Rowling and Some Fans Seem
-              Conflicted
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 cat-col">
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638699/michael-stipe.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                REM's Michael Stipe Offers New COVID Guidelines to Georgia
-                Governor
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638707/jerry-harris-cheer-arrest.jpg" class="mr-3 w-100"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                JERRY HARRIS CHEER ARREST Netflix 'Cheer' Star Jerry Harris
-                Arrested for Child Pornography
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638678/harry-potter-book.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                Harry Potter Book Australian Bookstore Won't Stock JK Rowling
-                After Transphobic Comments
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3 class="cat-h3">SPORT</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1636400/joe-burrow-cincinnati-bengals.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              Thursday Night Football: Cincinnati Bengals @ Cleveland Browns
-              Preview
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="feature-img-div">
-            <img class="card-img-top" src="https://d.newsweek.com/en/full/1637529/jimmy-butler-miami-heat.jpg"
-              alt="Card image cap" />
-          </div>
-          <div class="card-body card-body-pad">
-            <h5 class="card-title fam-hd">
-              NBA Playoffs: How to Watch Miami Heat vs Boston Celtics on TV
-              and Online
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-4 cat-col">
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638405/tiger-woods-us-open.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                U.S. Open 2020: Tiger Woods Tee Time, First Round Pairings
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638219/dustin-johnson-pga-tour.jpg" class="mr-3 w-100"
-                alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                U.S. Open: How to Watch First Round, TV Schedule, Live Stream
-              </h5>
-            </div>
-          </div>
-          <div class="row cat-card">
-            <div class="more-img-div col-3">
-              <img src="https://d.newsweek.com/en/full/1638403/usc-pac-12-football.jpg" class="mr-3 w-100" alt="..." />
-            </div>
-            <div class="media-body col-9">
-              <h5 class="mt-0 fam-hd font-15">
-                USC and Pac-12 Football Trump's Influence? Big Ten Will Play,
-                Pac-12 Schools Now Asking to Play
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- *** The Subscribe section starts here *** -->
-    <div class="subscribe sub-wrapper">
-      <div class="row">
-        <div class="col-lg-8 subscribe-div">
-          <h3 class="cat-h3 border-0">SUBSCRIBE</h3>
-          <div class="row sub-card align-items-center border-0 p-4">
-            <div class="sub-img-div col-5">
-              <img src="https://d.newsweek.com/en/full/1631397/cover-september-11-18-2020.jpg" class="mr-3 h-100"
-                alt="..." />
-              <img src="https://d.newsweek.com/en/full/1638209/cover-september-25-2020.jpg" class="mr-3 h-100 sub-abs"
-                alt="..." />
-            </div>
-            <div class="media-body col-7">
-              <h5 class="mt-0 card-title fam-hd">
-                Twitter Suspends Chinese Virologist Who Claimed Coronavirus
-                Was Made in Lab
-              </h5>
-              <p class="card-text font-15">
-                The social media profile of Dr. Li-Meng Yan went dark this
-                week as the academic claimed to have evidence the Chinese
-                government was involved
-              </p>
-              <button type="button" class="btn btn-primary btn-sm bg-danger border-0 px-3 py-2">
-                SUBSCRIBE >
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 email-div">
-          <h3 class="cat-h3 border-0">NEWSLETTER</h3>
-          <div class="row">
-            <div class="col-md-3 col-lg-6 email-img">
-              <img class="h-100 w-100" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png" alt="" />
-            </div>
-            <div class="col-md-9 col-lg-6">
-              <h5 class="card-title fam-hd mt-3">The Starting 5</h5>
-              <p class="card-text font-15">
-                See why nearly a quarter of a million subscribers begin their
-                day with the Starting 5.
-              </p>
-              <form>
-                <div class="form-group">
-                  <div class="">
-                    <input type="email" class="form-control" placeholder="Email address" />
-                  </div>
-                  <div class="email-btn-div rows">
-                    <button type="button" class="btn btn-primary btn-sm btn-block bg-danger border-0 mt-3 px-3 py-2">
-                      FREE SIGNUP >
-                    </button>
-                  </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  On Taiwan, Moral Courage from the Czech Republic
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"
+                    >NATAN SHARANSKY</span
+                  >
                 </div>
-              </form>
+              </div>
+            </div>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  Trump Is a Disaster on Climate Change. But We Can't Let Newsom
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"
+                    >GARY BAUER AND NURY TURKEL</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1636452/jane-fonda.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  On Taiwan, Moral Courage from the Czech Republic
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"> PETER ROFF</span>
+                </div>
+              </div>
+            </div>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1635852/jamil-n-jaffer.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  The Abraham Accords Are a Sanctification of God's Name
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"
+                    >NATAN SHARANSKY</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1636413/gary-bauer-nury-turkel.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  Trump Is a Disaster on Climate Change. But We Can't Let Newsom
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"> PETER ROFF</span>
+                </div>
+              </div>
+            </div>
+            <div class="row opinion-card bdr-btm-lt">
+              <div class="op-img-div">
+                <img
+                  src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png"
+                  class="w-100 h-100 img-h95"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-9">
+                <h5 class="d-h5 font-weight-bold font-15">
+                  The Abraham Accords Are a Sanctification of God's Name
+                </h5>
+                <div class="debate-by font-14">
+                  <span class="d-by">BY</span
+                  ><span class="debate-name font-weight-bold"
+                    >JASON D. GREENBLATT</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sponsored">
+            <div class="card">
+              <div class="feature-img-div">
+                <img
+                  class="card-img-top"
+                  src="https://d.newsweek.com/en/full/1636229/image-2-startup-making-long.jpg"
+                  alt="Card image cap"
+                />
+                <div class="feature-tag font-weight-bold font-14 blue">
+                  SPONSORED INSIGHT
+                </div>
+              </div>
+              <div class="card-body ranking-border">
+                <h5 class="card-title fam-hd font-weight-bold">
+                  This Startup Is Making Long Distance Real Estate Investing
+                  Possible for Millennials
+                </h5>
+                <p class="card-text font-15">
+                  75% of Roofstock users are first-time real estate investors,
+                  and more than half are under 35.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="feature-img-div">
+                <img
+                  class="card-img-top"
+                  src="https://d.newsweek.com/en/full/1614497/kent-state-university.jpg"
+                  alt="Card image cap"
+                />
+                <div class="feature-tag font-weight-bold blue">
+                  SPONSORED INSIGHT
+                </div>
+              </div>
+              <div class="card-body ranking-border">
+                <h5 class="card-title fam-hd font-weight-bold">
+                  What Could a Career in Engineering or Computer Science Do For
+                  You?
+                </h5>
+                <p class="card-text font-15">
+                  Could this be the perfect time for you to pursue a career in
+                  engineering or computer science? Find out how to get started.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="feature-img-div">
+                <img
+                  class="card-img-top"
+                  src="https://d.newsweek.com/en/full/1606968/best-nursing-homes-2020.png"
+                  alt="Card image cap"
+                />
+                <div class="feature-tag font-weight-bold blue">
+                  SPONSORED INSIGHT
+                </div>
+              </div>
+              <div class="card-body ranking-border">
+                <h5 class="card-title fam-hd font-weight-bold">
+                  Best Nursing Homes 2021
+                </h5>
+                <p class="card-text font-15">
+                  Newsweek is partnering with the respected global data research
+                  firm Statista Inc. to establish a ranking of Best Nursing
+                  Homes 2021. If you work in this field, please participate in
+                  our survey.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="feature-img-div">
+                <img
+                  class="card-img-top"
+                  src="https://d.newsweek.com/en/full/1612630/sweet-james-accident-attorneys-v2.jpg"
+                  alt="Card image cap"
+                />
+                <div class="feature-tag font-weight-bold blue">
+                  SPONSORED INSIGHT
+                </div>
+              </div>
+              <div class="card-body ranking-border">
+                <h5 class="card-title fam-hd font-weight-bold">
+                  America's Best Addiction Treatment Centers 2020
+                </h5>
+                <p class="card-text font-15">
+                  Newsweek partnered with global market research firm Statista
+                  Inc. to rank the best U.S. treatment facilities that focus on
+                  addiction.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="feature-img-div">
+                <img
+                  class="card-img-top"
+                  src="https://d.newsweek.com/en/full/1621635/americas-best-addiction-treatment-centers-2020.png"
+                  alt="Card image cap"
+                />
+                <div class="feature-tag font-weight-bold blue">
+                  SPONSORED INSIGHT
+                </div>
+              </div>
+              <div class="card-body ranking-border">
+                <h5 class="card-title fam-hd font-weight-bold">
+                  What Makes the Best Lawyers Stand Out?
+                </h5>
+                <p class="card-text font-15">
+                  The unthinkable has happened and you need a good lawyer to
+                  turn to, how do you chose?
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="feature-img-div">
+                <img
+                  class="card-img-top"
+                  src="https://d.newsweek.com/en/full/1587568/infection-prevention-products-banner.jpg"
+                  alt="Card image cap"
+                />
+                <div class="feature-tag font-weight-bold blue">
+                  SPONSORED INSIGHT
+                </div>
+              </div>
+              <div class="card-body ranking-border">
+                <h5 class="card-title fam-hd font-weight-bold">
+                  Best Infection Prevention Products
+                </h5>
+                <p class="card-text font-15">
+                  During the coronavirus outbreak, health care is more important
+                  than ever. In Newsweek's first Best Health Care series, we
+                  highlight the best infection prevention products.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="footer container-fluid">
-    <div class="row ft-social py-2">
-      <div class="col-md-6 row align-items-end">
-        <img class="col-md-6 ft-logo" src="./images/news-ft-logo.png" alt="" />
-        <span class="col-md-6 ft-copyrt font-12">© 2020 NEWSWEEK</span>
+      <div class="row align-items-center justify-content-center section-topic">
+        <!-- <div class="col-"> -->
+        <span class="n-log font-weight-bold">N</span>
+        <h2 class="topic-h2 font-weight-bold mb-0">IN THE MAGAZINE</h2>
+        <!-- </div> -->
       </div>
-      <div class="row col-md-6 justify-content-md-end align-items-center px-4">
-        <i class="ft-icon fab fa-facebook-square"></i>
-        <i class="ft-icon fab fa-twitter"></i>
-        <i class="ft-icon fab fa-instagram-square"></i>
-        <i class="ft-icon fab fa-tumblr"></i>
-        <i class="ft-icon fab fa-linkedin-in"></i>
-      </div>
-    </div>
-    <div class="row ft-span-div fsd-top pt-1">
-      <span class="ft-span"><a href="#" class="ft-link"></a>Editions:</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>U.S. Edition</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>日本</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Pakistan</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Polska</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>România</span>
-    </div>
-    <div class="row ft-span-div">
-      <span class="ft-span"><a href="#" class="ft-link"></a>About Us</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Corrections</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Contact Us</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Editorial Guidelines</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Advertise</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Copyright</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Terms & Conditions</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Privacy Policy</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Cookie Policy</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Terms of Sale</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Archive</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Announcements</span>
-      <span class="ft-span"><a href="#" class="ft-link"></a>Consent preferences</span>
-    </div>
-  </footer>
-</body>
 
+      <!-- *** The "In The Magazine" section starts here *** -->
+      <div class="row in-the-magazine">
+        <!-- <div class="row"> -->
+        <div class="card col-md-3">
+          <div class="feature-img-div">
+            <img
+              class="w-100"
+              src="https://d.newsweek.com/en/full/1638209/cover-september-25-2020.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">SEPTEMBER 18 ISSUE</div>
+          </div>
+          <div class="row feat-body justify-content-center align-items-center">
+            <h5 class="feat-h5 font-weight-bold font-15 mb-0">
+              SEE ALL FEATURES >
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft1.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">COVER</span
+            ><span class="mag-trans font-weight-bold font-14">NEWS</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              How the Pandemic Will Change the Way We Manage Money Forever
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft2.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">FEATURES</span
+            ><span class="mag-trans font-weight-bold font-14">NEWS</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              When Will There Be a COVID-19 Vaccine and Should You Trust That
+              It's Safe?
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft3.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">FEATURES</span
+            ><span class="mag-trans font-weight-bold font-14">NEWS</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Florida Dem Rep Shalala Admits Squad Sometimes Pisses Her Off,
+              Lets Loose on 'Idiotic' Trump
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft4.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">PERISCOPE</span
+            ><span class="mag-trans font-weight-bold font-14">POLITICS</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Florida Dem Rep Shalala Admits Squad Sometimes Pisses Her Off,
+              Lets Loose on 'Idiotic' Trump
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft5.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">FEATURES</span
+            ><span class="mag-trans font-weight-bold font-14">CULTURE</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Here Are the Young, Diverse Conservative Stars Progressives Need
+              to Fear
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft6.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">POLITICS</span
+            ><span class="mag-trans font-weight-bold font-14">NEWS</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Janelle Monáe's Film 'Antebellum' Shows the Horrors of Systemic
+              Racism
+            </h5>
+          </div>
+        </div>
+        <div class="card col-md-3">
+          <div class="mag-img-div">
+            <img
+              class="w-100 h-100 mag-img"
+              src="./images/ft7.jpg"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="mag-tag">
+            <span class="red-bg font-weight-bold font-14">FOCUS</span
+            ><span class="mag-trans font-weight-bold font-14">CULTURE</span>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Dr. Fauci Would Bet 10 Cents on Trump Having Vaccine by November,
+              December
+            </h5>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="row align-items-center justify-content-center section-topic">
+        <!-- <div class="col-"> -->
+        <span class="n-log font-weight-bold">N</span>
+        <h2 class="topic-h2 font-weight-bold mb-0">EDITORS PICK</h2>
+        <!-- </div> -->
+      </div>
+
+      <!-- *** The Editors Picks section starts here *** -->
+      <div class="row editors-picks">
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1637681/biden.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">POLITICS</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              As Trump Boosts Ad Spend, Biden Unveils $65 Million Blitz in
+              Battlegrounds
+            </h5>
+            <p class="card-text font-15">
+              The Biden campaign announced the spending after Trump's team said
+              it would be spending an unspecified eight-figure sum on
+              advertisements.
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1638521/yellowstone.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">TECH & SCIENCE</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Yellowstone Volcano Earthquake Swarm Sees 100 Events Recorded in
+              One Day
+            </h5>
+            <p class="card-text font-15">
+              Scientists say this is the best-recorded earthquake swarm to hit
+              Yellowstone and the team is now analyzing the data from it.
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1639294/basis-sex-ruth-ginsburg.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">CULTURE</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Janelle Monáe's Film 'Antebellum' Shows the Horrors of Systemic
+              Racism
+            </h5>
+            <p class="card-text font-15">
+              "We're in the middle of a revolution. We're in the middle of a
+              reckoning," Janelle Monáe told Newsweek.
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1638214/great-white-shark.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">TECH & SCIENCE</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Killer Whales 'Ripped Open' Great White Sharks, Ate Liver, Heart
+              and Testes
+            </h5>
+            <p class="card-text font-15">
+              Marine biologist describes injuries sustained by the sharks in
+              South Africa after being hunted by orca.
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1638408/covid-19-coronavirus-getty-new-york.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">HEALTH</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              You Are One Million Times More Likely to Catch Coronavirus Than
+              Win Lottery
+            </h5>
+            <p class="card-text font-15">
+              World Health Organization expert Dr. Mike Ryan said the chances of
+              catching the coronavirus are high.
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1638307/anti-racism-protest.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">WORLD</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Why Are Black People Still Paid Less Than Their White
+              Counterparts?
+            </h5>
+            <p class="card-text font-15">
+              The ethnicity pay gap "is costing the British economy as much as
+              £24 billion ($31 billion) a year."
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1636344/getty-images-california-fire.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">U.S</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              How and When Did the California Wildfires Start?
+            </h5>
+            <p class="card-text font-15">
+              Wildfires can be a natural occurrence or can be started by humans.
+            </p>
+          </div>
+        </div>
+        <div class="card col-md-6 col-lg-3">
+          <div class="feature-img-div">
+            <img
+              class="card-img-top"
+              src="https://d.newsweek.com/en/full/1561273/brad-pitt-jennifer-aniston-reunion.jpg"
+              alt="Card image cap"
+            />
+            <div class="feature-tag font-weight-bold">NEWS</div>
+          </div>
+          <div class="card-body card-body-pad">
+            <h5 class="card-title fam-hd font-weight-bold">
+              Why Meghan Markle Losing Her Paparazzi Privacy Case is
+              'Impossible'
+            </h5>
+            <p class="card-text font-15">
+              The Duchess of Sussex may be virtually guaranteed victory in a law
+              suit against a major paparazzi agency operating in the U.K. and
+              U.S. thanks to a princess from Monaco, legal experts tell
+              Newsweek.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- *** The Categories section starts here *** -->
+      <div class="categories">
+        <h3 class="cat-h3 font-weight-bold font-17">U.S</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638757/i-voted-mail-stickers.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                N.C. Rejecting 4 Times As Many Black Voters' Ballots Compared
+                White Voters
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638748/mecklenburg-county-board-elections.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Trump Says North Carolina Has 'Rigged Election in Waiting'
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 cat-col">
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img src="./images/mo1.jpg" class="w-100 cat-img" alt="..." />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Republicans Refutes Trump's False Mail-In Voting Claims and
+                  Offer A Warning
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img src="./images/mo2.jpg" class="w-100 cat-img" alt="..." />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Travelers to Hawaii Can Bypass 2-Week Quarantine With Negative
+                  Test Result
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img src="./images/mo3.jpg" class="w-100 cat-img" alt="..." />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  How to Watch, Live Stream Trump's Re-Election Rally in
+                  Mosinee, Wisconsin
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="cat-h3 font-weight-bold font-17">BUSINESS</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1636138/pennsylvania-mask-restrictions-lifted-judge.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Judge Rules Pennsylvania's 'New Normal' COVID Restrictions
+                Unconstitutional
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1635858/tiktok-sale.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                TikTok Chooses Oracle, a Rare Trump Ally in Silicon Valley, to
+                Sell Assets
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 cat-col">
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1631938/swan-dive-rochester-protests-destroyed.jpg"
+                  class="w-100 cat-img"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Rochester Eatery Offered BLM Protesters Water Hours Before
+                  Being Vandalized
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1631351/dunkin-donuts-santa-monica-california-2015.jpg"
+                  class="w-100 cat-img"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Are Starbucks, Dunkin' Donuts Open on Labor Day? See Coffee
+                  Shop Hours
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1629704/cover-pandemic-money-graphic.jpg"
+                  class="w-100 cat-img"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  How the Pandemic Will Change the Way We Manage Money Forever
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="cat-h3 font-weight-bold font-17">WORLD</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638785/us-russia-military-northeast-syria.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Trump Must Talk to Russia and Syria If He Wants U.S. Out of War,
+                Allies Say
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638756/srinagar-protest.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Indian Town Cuts Internet to Avoid More Protests Over Police
+                Custody Death
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 cat-col">
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638711/russia-belarus-slavic-brotherhood-2020.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Russia Eyes East and West Border Threats, Looks to China for
+                  Closer Ties
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638415/joe-biden.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Joe Biden Warns Britain Over Brexit
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638328/usa-binary-map-smaller-version.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  As U.S.-China Cyber Cold War Rages, Intellectual Property Is A
+                  Costly Front
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="cat-h3 font-weight-bold font-17">TECH & SCIENCE</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638595/whale-ship-dead.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                California Whales Are Being Killed by Ships. AI Might Be Able to
+                Save Them
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637737/elon-musk.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Musk Says Electric Cars in Tunnels Under Cities Will 'Feel Like
+                Warp Drive'
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 cat-col">
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638418/oculus-quest.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Facebook VR Guru Embarrassed by Lack of Social Experiences
+                  During COVID-19
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1637652/mark-zuckerberg.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Facebook Refuses to Comment on 24-Hour Instagram Boycott by
+                  Celebrities
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1637537/tucker-carlson-tonight-dr-li-meng-yan.png"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Tucker Carlson Tonight - Dr. Li-Meng Yan Twitter Suspends
+                  Chinese Virologist Who Claimed Coronavirus Was Made in Lab
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="cat-h3 font-weight-bold font-17">CULTURE</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638747/electrodes.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Who Was Robert Galbraith Heath?
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1638739/hogwarts-legacy-harry-potter-game-screenshot-troll.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                'Hogwarts Legacy' Doesn't Have JK Rowling and Some Fans Seem
+                Conflicted
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 cat-col">
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638699/michael-stipe.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  REM's Michael Stipe Offers New COVID Guidelines to Georgia
+                  Governor
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638707/jerry-harris-cheer-arrest.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  JERRY HARRIS CHEER ARREST Netflix 'Cheer' Star Jerry Harris
+                  Arrested for Child Pornography
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638678/harry-potter-book.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  Harry Potter Book Australian Bookstore Won't Stock JK Rowling
+                  After Transphobic Comments
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="cat-h3 font-weight-bold font-17">SPORT</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1636400/joe-burrow-cincinnati-bengals.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                Thursday Night Football: Cincinnati Bengals @ Cleveland Browns
+                Preview
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-img-div">
+              <img
+                class="card-img-top"
+                src="https://d.newsweek.com/en/full/1637529/jimmy-butler-miami-heat.jpg"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body card-body-pad">
+              <h5 class="card-title fam-hd font-weight-bold">
+                NBA Playoffs: How to Watch Miami Heat vs Boston Celtics on TV
+                and Online
+              </h5>
+            </div>
+          </div>
+          <div class="col-md-4 cat-col">
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638405/tiger-woods-us-open.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  U.S. Open 2020: Tiger Woods Tee Time, First Round Pairings
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638219/dustin-johnson-pga-tour.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  U.S. Open: How to Watch First Round, TV Schedule, Live Stream
+                </h5>
+              </div>
+            </div>
+            <div class="row cat-card">
+              <div class="more-img-div col-4">
+                <img
+                  src="https://d.newsweek.com/en/full/1638403/usc-pac-12-football.jpg"
+                  class="cat-img w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-8">
+                <h5 class="mt-0 fam-hd font-weight-bold font-15">
+                  USC and Pac-12 Football Trump's Influence? Big Ten Will Play,
+                  Pac-12 Schools Now Asking to Play
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *** The Subscribe section starts here *** -->
+      <div class="subscribe sub-wrapper">
+        <div class="row">
+          <div class="col-lg-8 subscribe-div">
+            <h3 class="cat-h3 font-weight-bold font-17 border-0">SUBSCRIBE</h3>
+            <div class="row sub-card align-items-center border-0 p-4">
+              <div class="sub-img-div col-5">
+                <img
+                  src="https://d.newsweek.com/en/full/1631397/cover-september-11-18-2020.jpg"
+                  class="mr-3 h-100"
+                  alt="..."
+                />
+                <img
+                  src="https://d.newsweek.com/en/full/1638209/cover-september-25-2020.jpg"
+                  class="mr-3 h-100 sub-abs"
+                  alt="..."
+                />
+              </div>
+              <div class="media-body col-7 sub-body">
+                <h5 class="mt-0 card-title fam-hd font-weight-bold">
+                  Twitter Suspends Chinese Virologist Who Claimed Coronavirus
+                  Was Made in Lab
+                </h5>
+                <p class="card-text font-15">
+                  The social media profile of Dr. Li-Meng Yan went dark this
+                  week as the academic claimed to have evidence the Chinese
+                  government was involved
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm bg-danger border-0 px-3 py-2"
+                >
+                  SUBSCRIBE >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 email-div">
+            <h3 class="cat-h3 font-weight-bold font-17 border-0">NEWSLETTER</h3>
+            <div class="row">
+              <div class="col-md-3 col-lg-6 email-img-div">
+                <img class="email-img" src="./images/email.jpg" alt="" />
+              </div>
+              <div class="col-md-9 col-lg-6">
+                <h5 class="card-title fam-hd font-weight-bold mt-3">
+                  The Starting 5
+                </h5>
+                <p class="card-text font-15">
+                  See why nearly a quarter of a million subscribers begin their
+                  day with the Starting 5.
+                </p>
+                <form>
+                  <div class="form-group">
+                    <div class="">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email address"
+                      />
+                    </div>
+                    <div class="email-btn-div rows">
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-sm btn-block bg-danger border-0 mt-3 px-3 py-2"
+                      >
+                        FREE SIGNUP >
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer container-fluid">
+      <div class="row ft-social py-2">
+        <div class="col-md-6 row align-items-end">
+          <img
+            class="col-md-6 ft-logo"
+            src="./images/news-ft-logo.png"
+            alt=""
+          />
+          <span class="col-md-6 ft-copyrt font-12">© 2020 NEWSWEEK</span>
+        </div>
+        <div
+          class="row col-md-6 justify-content-md-end align-items-center px-4"
+        >
+          <i class="ft-icon fab fa-facebook-square"></i>
+          <i class="ft-icon fab fa-twitter"></i>
+          <i class="ft-icon fab fa-instagram-square"></i>
+          <i class="ft-icon fab fa-tumblr"></i>
+          <i class="ft-icon fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="row ft-span-div fsd-top pt-1">
+        <span class="ft-span"><a href="#" class="ft-link"></a>Editions:</span>
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>U.S. Edition</span
+        >
+        <span class="ft-span"><a href="#" class="ft-link"></a>日本</span>
+        <span class="ft-span"><a href="#" class="ft-link"></a>Pakistan</span>
+        <span class="ft-span"><a href="#" class="ft-link"></a>Polska</span>
+        <span class="ft-span"><a href="#" class="ft-link"></a>România</span>
+      </div>
+      <div class="row ft-span-div">
+        <span class="ft-span"><a href="#" class="ft-link"></a>About Us</span>
+        <span class="ft-span"><a href="#" class="ft-link"></a>Corrections</span>
+        <span class="ft-span"><a href="#" class="ft-link"></a>Contact Us</span>
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Editorial Guidelines</span
+        >
+        <span class="ft-span"><a href="#" class="ft-link"></a>Advertise</span>
+        <span class="ft-span"><a href="#" class="ft-link"></a>Copyright</span>
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Terms & Conditions</span
+        >
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Privacy Policy</span
+        >
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Cookie Policy</span
+        >
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Terms of Sale</span
+        >
+        <span class="ft-span"><a href="#" class="ft-link"></a>Archive</span>
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Announcements</span
+        >
+        <span class="ft-span"
+          ><a href="#" class="ft-link"></a>Consent preferences</span
+        >
+      </div>
+    </footer>
+  </body>
 </html>

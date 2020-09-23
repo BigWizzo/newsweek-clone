@@ -269,7 +269,7 @@
 }
 
 .sub-img-div {
-  height: 5.3125rem;
+  height: 14.1875rem;
 }
 
 .sub-abs {
@@ -345,8 +345,13 @@
   }
 
   .sub-img-div {
-    height: 5.3125rem;
+    height: 14.1875rem;
     text-align: center;
+  }
+
+  .sub-abs {
+    top: 10%;
+    left: 45%;
   }
 }
 

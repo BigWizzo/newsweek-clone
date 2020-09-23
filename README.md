@@ -43,13 +43,13 @@ To get a local copy up and running follow these simple example steps.
 👤 Willard Nyamunokora
 
 
-- Github: [@githubhandle](https://github.com/bigwizzo )
-- Twitter: [@twitterhandle](https://twitter.com/willnyamunokora)
-- Linkedin: [linkedin](https://www.linkedin.com/in/willnyamunokora)
+- Github: [@bigwizzo](https://github.com/bigwizzo )
+- Twitter: [@willnyamunokora](https://twitter.com/willnyamunokora)
+- Linkedin: [@willnyamunokora](https://www.linkedin.com/in/willnyamunokora)
 
 👤 Andjela Vukadinovic
 
-- Github: [@githubhandle](https://github.com/410AngelaVU)
+- Github: [@410AngelaVU](https://github.com/410AngelaVU)
 
 ## 🤝 Contributing
 

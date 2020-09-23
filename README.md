@@ -1,29 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+Newsweek Clone
+This project is build with Bootstrap!
 
-> One paragraph statement about the project.
+![screenshot](./images/sc.png)
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML and CSS
+- Bootstrap
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://bigwizzo.github.io/newsweek-clone/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+This project represents clone of Newsweek. To build it we used Bootstrap framework.
 
 To get a local copy up and running follow these simple example steps.
 
@@ -43,23 +40,22 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 Willard Nyamunokora
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
-👤 **Author2**
+- Github: [@bigwizzo](https://github.com/bigwizzo )
+- Twitter: [@willnyamunokora](https://twitter.com/willnyamunokora)
+- Linkedin: [@willnyamunokora](https://www.linkedin.com/in/willnyamunokora)
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+👤 Andjela Vukadinovic
+
+- Github: [@410AngelaVU](https://github.com/410AngelaVU)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/BigWizzo/newsweek-clone/issues ).
 
 ## Show your support
 
@@ -73,4 +69,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

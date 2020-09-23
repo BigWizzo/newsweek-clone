@@ -1,0 +1,383 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-body-pad {
+  padding: 1.25rem 0;
+}
+
+.fam-hd {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.125rem;
+}
+
+.font-12 {
+  font-size: 0.75rem;
+}
+
+.font-14 {
+  font-size: 0.875rem;
+}
+
+.font-15 {
+  font-size: 0.9375rem;
+}
+
+.font-17 {
+  font-size: 1.0625rem;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.bdr-btm-lt {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 15px 0;
+}
+
+.nav-subscribe {
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.nav-1 {
+  background: #ff0500;
+  height: 5.9375rem;
+}
+
+.weather {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.my-nav-weather {
+  margin: 20px 20px;
+}
+
+.my-nav-1 {
+  height: 5.9375rem;
+}
+
+.first-span {
+  margin: 50px auto;
+}
+
+.second-span {
+  font-size: 18px;
+}
+
+.btn-login {
+  width: 20%;
+  height: 1.875rem;
+  background: #f72210;
+  cursor: pointer;
+}
+
+.hello {
+  width: 12.5rem;
+  border: 1px solid black;
+}
+
+.love {
+  height: 3.125rem;
+  border-bottom: 1px solid #f4f5f7;
+  border-top: 1px solid #f4f5f7;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.nav-mid {
+  border-right: 1px solid #a0a0a0;
+  height: 1.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-link:hover,
+.nav-mid:hover {
+  color: #f72210;
+}
+
+.btm-nav {
+  margin-top: 6.25rem;
+}
+
+.nav-input {
+  width: 3.75rem;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.main-section {
+  padding: 0 40px;
+}
+
+.section-topic {
+  padding: 20px 0;
+  margin: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.topic-h2 {
+  font-size: 1.1875rem;
+}
+
+.n-log {
+  padding: 0 9px;
+  margin-right: 4px;
+  font-size: 1.1875rem;
+}
+
+.last-span {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card {
+  border: none;
+}
+
+.feature-tag {
+  bottom: 0;
+  left: 0;
+  padding: 8px 15px 9px 15px;
+  background: #f9f7f8;
+}
+
+.ranking-border {
+  border: 1px solid #e6e6e6;
+}
+
+.blue {
+  color: #3e86f4;
+}
+
+.h5-3 {
+  padding: 10px 0;
+  color: #818181;
+}
+
+.more-card {
+  padding: 25px 0;
+  border-top: 1px solid #ddd;
+}
+
+.more-img-div {
+  height: 5.9375rem;
+  width: 5.9375rem;
+}
+
+/* debate section starts here */
+
+.d-card-btm {
+  border-bottom: 6px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  padding: 15px 0;
+  margin-top: 2px;
+}
+
+.img-h95 {
+  border-radius: 50%;
+}
+
+.debate-name {
+  padding: 0 10px;
+}
+
+.form-div {
+  background-color: #f4f5f6;
+  border: 1px solid #e5e5e5;
+}
+
+.vs {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  bottom: 45%;
+  left: 50%;
+}
+
+/* opion starts here */
+
+.d-card-top {
+  border-top: 6px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 15px 0;
+}
+
+.op-img-div {
+  height: 3.9375rem;
+  width: 3.9375rem;
+}
+
+/* In the Magazine starts here */
+
+.feat-body {
+  background: #dbdcdd;
+}
+
+.feat-h5 {
+  padding: 8px 0;
+}
+
+.red-bg {
+  padding: 4px 10px;
+}
+
+.mag-trans {
+  padding: 4px 10px;
+}
+
+.mag-tag {
+  margin-top: 12px;
+}
+
+.cat-card {
+  padding: 11px 0;
+}
+
+.cat-h3 {
+  padding: 20px 0 8px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cat-img {
+  height: 5.9375rem;
+  width: 5.9375rem;
+  object-fit: cover;
+}
+
+/* subscribe section starts here */
+.sub-wrapper {
+  padding: 20px 0;
+  border-top: 1px solid gray;
+}
+
+.sub-card {
+  height: 19.6875rem;
+  background: #f4f5f6;
+}
+
+.sub-img-div {
+  height: 14.1875rem;
+}
+
+.sub-abs {
+  top: 35px;
+  left: 75px;
+}
+
+.email-img-div {
+  width: 11.375rem;
+  height: 19.6875rem;
+  overflow: hidden;
+}
+
+/* footer starts here */
+.footer {
+  margin: 30px 0;
+  border-top: 2px solid gainsboro;
+}
+
+.ft-logo {
+  max-width: 14.875rem;
+  max-height: 2.3125rem;
+}
+
+.ft-icon {
+  font-size: 1.375rem;
+  padding: 0 5px;
+}
+
+.ft-span-div {
+  padding-left: 10px;
+}
+
+.fsd-top {
+  border-top: 1px solid #d2d2d2;
+}
+
+.ft-span {
+  padding: 0 10px;
+  font-size: 0.8125rem;
+  border-right: 1px solid #ccc;
+  margin: 5px;
+}
+
+/* devices less 568px and down */
+
+@media (max-width: 568px) {
+  .nav-subscribe {
+    color: black;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .logo-img-1 {
+    height: 45px;
+    width: 81px;
+  }
+}
+
+/* devices less 768px and down */
+
+@media (max-width: 768px) {
+  .sub-card {
+    position: relative;
+    justify-content: center;
+  }
+
+  .sub-body {
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+  }
+
+  .sub-img-div {
+    height: 14.1875rem;
+    text-align: center;
+  }
+
+  .sub-abs {
+    top: 10%;
+    left: 45%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and down) */
+@media (max-width: 991px) {
+  .nav-1 {
+    height: 3.125rem;
+  }
+
+  .email-img-div {
+    width: 11.9375rem;
+    height: 14.5rem;
+    overflow: hidden;
+  }
+
+  .main-section {
+    padding: 0 20px;
+    margin-top: 65px;
+  }
+
+  .my-nav-1 {
+    height: 3.125rem;
+    width: 100%;
+  }
+
+  .logo-img-1 {
+    width: auto;
+  }
+}

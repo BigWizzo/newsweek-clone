@@ -22,22 +22,6 @@ This project is build with Bootstrap!
 
 This project represents clone of Newsweek. To build it we used Bootstrap framework.
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
 ## Authors
 
 👤 Willard Nyamunokora
